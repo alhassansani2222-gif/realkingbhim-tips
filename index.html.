@@ -2,128 +2,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RealKingBhim Tips | Football Predictions</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b1110;
-      color: #fff;
-    }
-    header {
-      background: #101c17;
-      padding: 22px 16px;
-      border-bottom: 2px solid #20c777;
-      text-align: center;
-    }
-    header h1 { margin: 0; color: #28df88; font-size: 25px; }
-    header p { color: #c1cec6; margin-bottom: 0; }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 15px 8px;
-      background: #16221c;
-    }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    .hero { padding: 35px 18px; text-align: center; }
-    .hero h2 { font-size: 28px; margin-bottom: 10px; }
-    .hero p { color: #bdc9c1; line-height: 1.6; }
-    .section { padding: 18px; max-width: 850px; margin: auto; }
-    .section h2 { color: #28df88; }
-    .match {
-      background: #17221c;
-      border: 1px solid #2b4235;
-      border-radius: 12px;
-      padding: 17px;
-      margin: 14px 0;
-    }
-    .tag {
-      color: #28df88;
-      font-size: 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    .match h3 { margin: 10px 0; }
-    .pick { color: #d8e5dc; line-height: 1.7; }
-    .vip { border: 1px solid #d5ae45; }
-    .vip .tag { color: #f2ce68; }
-    .button {
-      display: inline-block;
-      background: #20c777;
-      color: #06130b;
-      padding: 12px 18px;
-      border-radius: 7px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 8px;
-    }
-    .notice {
-      background: #202a23;
-      padding: 14px;
-      border-radius: 8px;
-      color: #c6d2ca;
-      line-height: 1.6;
-    }
-    footer {
-      margin-top: 35px;
-      padding: 25px 15px;
-      background: #101c17;
-      color: #b9c7bd;
-      text-align: center;
-      font-size: 13px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RealKingBhim Tips | Football Predictions</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#07110e;color:#fff}
+header{text-align:center;background:#10251b;padding:25px 12px;border-bottom:3px solid #21d875}
+header h1{color:#21d875;margin:0;font-size:27px}
+nav{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;padding:16px;background:#0c1b14}
+nav a{color:#fff;text-decoration:none;font-weight:bold}
+main{max-width:850px;margin:auto;padding:16px}
+.hero{text-align:center;padding:30px 8px}
+.hero h2{color:#21d875;font-size:27px}
+.card{background:#10251b;border:1px solid #28513a;border-radius:12px;padding:20px;margin:18px 0}
+.card h3{color:#21d875;margin-top:0}
+.tag{display:inline-block;background:#1b7045;padding:7px 10px;border-radius:5px;font-size:13px}
+.btn{display:inline-block;background:#21d875;color:#06150c;padding:13px 17px;border-radius:7px;text-decoration:none;font-weight:bold;margin-top:10px}
+.vip-price{font-size:30px;color:#ffd166;font-weight:bold}
+.note{color:#c8d6cd;line-height:1.6;font-size:14px}
+footer{text-align:center;background:#10251b;padding:24px;color:#bbb;margin-top:30px}
+</style>
 </head>
 <body>
-  <header>
-    <h1>⚽ REALKINGBHIM TIPS</h1>
-    <p>Football Predictions • Free Picks • VIP Tips</p>
-  </header>
+<header>
+<h1>⚽ REALKINGBHIM TIPS</h1>
+<p>Football Predictions • Free Tips • VIP Tips</p>
+</header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#free">Free Tips</a>
-    <a href="#vip">VIP Tips</a>
-  </nav>
+<nav>
+<a href="#home">Home</a>
+<a href="#free">Free Tips</a>
+<a href="#vip">VIP Tips</a>
+<a href="#contact">Contact</a>
+</nav>
 
-  <section class="hero" id="home">
-    <h2>Welcome to RealKingBhim Tips</h2>
-    <p>Your football predictions hub.<br>
-    Check the picks, review the details, and make informed decisions.</p>
-    <a class="button" href="#free">View Today's Tips</a>
-  </section>
+<main>
+<section class="hero" id="home">
+<h2>Welcome to RealKingBhim Tips</h2>
+<p>Your home for football predictions and premium tips.</p>
+<a class="btn" href="#free">View Free Tips</a>
+</section>
 
-  <section class="section" id="free">
-    <h2>🟢 Free Predictions</h2>
-    <div class="match">
-      <span class="tag">Free Pick</span>
-      <h3>Sample Match 1 vs Sample Match 2</h3>
-      <p class="pick">
-        Prediction: Add your prediction here<br>
-        Match date: Add date and time
-      </p>
-    </div>
-    <p class="notice">These are sample placeholders. Replace them with real fixtures and your own predictions before publishing.</p>
-  </section>
+<section class="card" id="free">
+<h3>🆓 Free Football Tips</h3>
+<span class="tag">FREE ACCESS</span>
+<p>Today's football predictions</p>
+<p><strong>Match:</strong> Add match name here</p>
+<p><strong>Prediction:</strong> Add your prediction here</p>
+<p class="note">Edit this section to publish your actual predictions. These are placeholders, not live match tips.</p>
+</section>
 
-  <section class="section" id="vip">
-    <h2>🔒 VIP Predictions</h2>
-    <div class="match vip">
-      <span class="tag">VIP Access</span>
-      <h3>Premium Football Predictions</h3>
-      <p class="pick">Get access to your premium picks.</p>
-      <p><strong>Price: GHS —</strong> Set your price before publishing.</p>
-      <p class="notice">VIP access and payment verification are not connected yet. Do not share paid picks here until secure payment access is set up.</p>
-    </div>
-  </section>
+<section class="card" id="vip">
+<h3>👑 VIP Premium Tips</h3>
+<span class="tag">PREMIUM ACCESS</span>
+<p>Get access to our VIP football predictions.</p>
+<p class="vip-price">GH₵50</p>
+<p>VIP membership price</p>
+<a class="btn" href="https://wa.me/233597529539?text=Hello%20RealKingBhim%20Tips%2C%20I%20want%20to%20buy%20the%20GH%E2%82%B550%20VIP%20tips.">Contact to Buy VIP</a>
+<p class="note">Contact us on WhatsApp for purchase instructions. Paystack payment and automatic VIP access are not connected yet.</p>
+</section>
 
-  <footer>
-    <p>© 2026 RealKingBhim Tips</p>
-    <p>Football predictions involve risk. No result is guaranteed.</p>
-  </footer>
+<section class="card" id="contact">
+<h3>📲 Contact Us on WhatsApp</h3>
+<p>Questions about our tips or VIP membership? Message us directly.</p>
+<a class="btn" href="https://wa.me/233597529539?text=Hello%20RealKingBhim%20Tips">Chat on WhatsApp</a>
+<p class="note">WhatsApp: 0597529539</p>
+</section>
+</main>
+
+<footer>
+<p>© 2026 RealKingBhim Tips</p>
+<p>Predictions are not guaranteed results. Bet responsibly.</p>
+</footer>
 </body>
 </html>
