@@ -33,7 +33,7 @@ export default async function handler(req, res) {
         },
         body: JSON.stringify({
           email: req.body?.email,
-          amount: 50000,
+           amount: 5000,
           currency: "GHS",
           callback_url: `${siteUrl}/vip.html`
         })
