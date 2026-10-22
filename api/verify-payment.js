@@ -44,7 +44,7 @@ export default async function handler(req, res) {
       result.status === true &&
       transaction?.status === "success" &&
       transaction?.currency === "GHS" &&
-      transaction?.amount === 500000;
+      transaction?.amount === transaction.amount === 5000;;
 
     return res.status(200).json({
       success: verified,
