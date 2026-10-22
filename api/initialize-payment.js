@@ -53,7 +53,4 @@ export default async function handler(req, res) {
     });
   } catch {
     return res.status(500).json({
-      message: "Payment service error"
-    });
-  }
-}
+      
