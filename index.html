@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,13 +19,18 @@ main{max-width:850px;margin:auto;padding:16px}
 .card{background:#10251b;border:1px solid #28513a;border-radius:12px;padding:20px;margin:18px 0}
 .match{background:#0a1911;border:1px solid #28513a;border-radius:10px;padding:12px;margin:12px 0}
 .tag{display:inline-block;background:#1b7045;padding:6px 10px;border-radius:5px;font-size:13px;font-weight:bold}
-.btn{display:inline-block;background:#21d875;color:#06150c;padding:12px 16px;border-radius:7px;text-decoration:none;font-weight:bold;margin:8px 8px 0 0;cursor:pointer}
+.btn{display:inline-block;background:#21d875;color:#06150c;padding:12px 16px;border:0;border-radius:7px;text-decoration:none;font-weight:bold;margin:8px 8px 0 0;cursor:pointer}
 .price{font-size:30px;color:#ffd166;font-weight:bold}
 .note{color:#c8d6cd;font-size:14px}
 .vip{border-color:#21d875}
 .booking{text-align:center;background:#0a1911;border:2px dashed #21d875;border-radius:10px;padding:20px;margin-top:20px}
 .booking-code{font-size:30px;font-weight:bold;letter-spacing:3px;color:#21d875;overflow-wrap:anywhere}
-@media(max-width:480px){.card{padding:15px}nav{gap:10px}.booking-code{font-size:25px}}
+.team-only{font-weight:bold;font-size:17px}
+@media(max-width:480px){
+ .card{padding:15px}
+ nav{gap:10px}
+ .booking-code{font-size:25px}
+}
 </style>
 </head>
 <body>
@@ -47,6 +51,7 @@ main{max-width:850px;margin:auto;padding:16px}
 </nav>
 
 <main>
+
 <section class="hero" id="home">
 <h2>Welcome to RealKingBhim Tips</h2>
 <p>Your destination for free football predictions and premium tips.</p>
@@ -54,94 +59,142 @@ main{max-width:850px;margin:auto;padding:16px}
 <a class="btn" href="#vip1">👑 View VIP Packages</a>
 </section>
 
-<!-- FREE GAMES -->
+<!-- FREE GAMES: DETAILS ARE PUBLIC -->
 <section class="card" id="free">
 <h2>🆓 Free Football Games</h2>
 <span class="tag">FREE ACCESS</span>
-<p>Today's free teams:</p>
+<p><strong>Match predictions for 25 October 2026</strong></p>
 
-<div class="match"><h3>Match 1</h3><p><strong>GNK Dinamo Zagreb vs NEC Nijmegen</strong></p></div>
-<div class="match"><h3>Match 2</h3><p><strong>OFI Crete vs Bayer Leverkusen</strong></p></div>
-<div class="match"><h3>Match 3</h3><p><strong>FK Jablonec vs Brighton</strong></p></div>
-<div class="match"><h3>Match 4</h3><p><strong>AC Omonia Nicosia vs Benfica</strong></p></div>
-<div class="match"><h3>Match 5</h3><p><strong>Bournemouth vs AC Milan</strong></p></div>
+<div class="match">
+<h3>Match 1</h3>
+<p><strong>FC Midtjylland vs Lyngby BK</strong></p>
+<p>Prediction: Home Win (1X2 - 1UP)</p>
+<p>Odds: 1.22</p>
+<p>Kick-off: 13:00</p>
+</div>
+
+<div class="match">
+<h3>Match 2</h3>
+<p><strong>Silkeborg IF vs Nordsjaelland</strong></p>
+<p>Prediction: Over 7.5 Corners</p>
+<p>Odds: 1.31</p>
+<p>Kick-off: 13:00</p>
+</div>
+
+<div class="match">
+<h3>Match 3</h3>
+<p><strong>Viktoria Plzen vs FK Pardubice</strong></p>
+<p>Prediction: Yes (Home Team or Any Clean Sheet)</p>
+<p>Odds: 1.29</p>
+<p>Kick-off: 17:00</p>
+</div>
+
+<div class="match">
+<h3>Match 4</h3>
+<p><strong>Hapoel Petah Tikva FC vs Beitar Jerusalem FC</strong></p>
+<p>Prediction: Away Win (1X2 - 1UP)</p>
+<p>Odds: 1.26</p>
+<p>Kick-off: 18:15</p>
+</div>
+
+<div class="match">
+<h3>Match 5</h3>
+<p><strong>Udinese vs AC Milan</strong></p>
+<p>Prediction: Away Win (1X2 - 1UP)</p>
+<p>Odds: 1.39</p>
+<p>Kick-off: 19:45</p>
+</div>
+
+<div class="match">
+<h3>Match 6</h3>
+<p><strong>Barcelona vs Real Madrid</strong></p>
+<p>Prediction: Home Win (1X2 - 2UP)</p>
+<p>Odds: 1.59</p>
+<p>Kick-off: 20:00</p>
+</div>
 
 <div class="booking">
 <h3>🎟️ Free Games Booking Code</h3>
 <p>SportyBet booking code:</p>
-<p class="booking-code" id="bookingCode">AX4FF4</p>
+<p class="booking-code" id="bookingCode">BETT6V</p>
 <button class="btn" type="button" onclick="copyBookingCode()">📋 Copy Booking Code</button>
 <p id="copyMessage" class="note" aria-live="polite"></p>
-<p class="note">Please check that the code works with your betting provider.</p>
 </div>
 
-<p class="note">Predictions are not guaranteed results. Bet responsibly.</p>
+<p class="note">Odds may change. Predictions are not guaranteed results. Bet responsibly.</p>
 </section>
 
-<!-- VIP 1 -->
+<!-- VIP 1: TEAMS ONLY BEFORE PAYMENT -->
 <section class="card vip" id="vip1">
 <h2>👑 VIP 1</h2>
-<span class="tag">VIP 1 ACCESS</span>
+<span class="tag">PREMIUM ACCESS</span>
 <p class="price">GH₵25</p>
-<p>10 teams</p>
+<p>12 teams • 25 October 2026</p>
 
-<div class="match">Aston Villa vs Man City</div>
-<div class="match">Arsenal vs Everton</div>
-<div class="match">Chelsea vs Tottenham</div>
-<div class="match">Racing Santander vs Espanyol</div>
-<div class="match">Valencia vs Villarreal</div>
-<div class="match">Atletico Madrid vs RC Deportivo de A Coruna</div>
-<div class="match">Como 1907 vs Sassuolo</div>
-<div class="match">Napoli vs Roma</div>
-<div class="match">Lazio vs Parma Calcio</div>
-<div class="match">Lens vs Paris FC</div>
+<div class="match team-only">Hibernian FC vs Celtic</div>
+<div class="match team-only">Crystal Palace vs Newcastle</div>
+<div class="match team-only">Liverpool vs Brighton</div>
+<div class="match team-only">Sparta Prague vs 1. FC Slovacko</div>
+<div class="match team-only">Hoffenheim vs Bayer Leverkusen</div>
+<div class="match team-only">Club Brugge vs St. Truidense VV</div>
+<div class="match team-only">Volos NPS vs Panathinaikos</div>
+<div class="match team-only">Freiburg vs Bayern Munich</div>
+<div class="match team-only">Nacional da Madeira vs Braga</div>
+<div class="match team-only">Rio Ave FC vs FC Famalicao</div>
+<div class="match team-only">Union Gilloise vs Cercle Brugge</div>
+<div class="match team-only">Barcelona vs Real Madrid</div>
+
+<p class="note">Predictions, odds and booking code are reserved for VIP customers.</p>
 
 <a class="btn" href="https://paystack.shop/pay/p5tgcalrh1" target="_blank" rel="noopener noreferrer">💳 Pay GH₵25 for VIP 1</a>
 <a class="btn" href="https://wa.me/233597529539?text=Hello%20RealKingBhim%20Tips%2C%20I%20paid%20for%20VIP%201.%20Please%20confirm%20my%20payment." target="_blank" rel="noopener noreferrer">📲 Confirm payment</a>
-<p class="note">After paying, contact WhatsApp to confirm payment and arrange access. Automatic VIP delivery is not active yet.</p>
+<p class="note">After payment, contact WhatsApp for payment confirmation and VIP details.</p>
 </section>
 
-<!-- VIP 2 -->
+<!-- VIP 2: TEAMS ONLY BEFORE PAYMENT -->
 <section class="card vip" id="vip2">
 <h2>👑 VIP 2</h2>
-<span class="tag">VIP 2 ACCESS</span>
+<span class="tag">PREMIUM ACCESS</span>
 <p class="price">GH₵40</p>
 <p>12 teams</p>
 
-<div class="match">Arsenal vs Everton</div>
-<div class="match">Mainz vs Werder Bremen</div>
-<div class="match">RB Leipzig vs SV 07 Elversberg</div>
-<div class="match">Borussia Dortmund vs Eintracht Frankfurt</div>
-<div class="match">Toulouse vs Troyes</div>
-<div class="match">West Ham vs Southampton</div>
-<div class="match">Wolves vs Watford</div>
-<div class="match">Gil Vicente Barcelos vs Porto</div>
-<div class="match">FC Utrecht vs PEC Zwolle</div>
-<div class="match">Al-Kholood vs Al-Ettifaq FC</div>
-<div class="match">Royal Antwerp FC vs Royal Charleroi SC</div>
-<div class="match">FK Teplice vs SK Artis Brno</div>
+<div class="match team-only">Arsenal vs Everton</div>
+<div class="match team-only">Mainz vs Werder Bremen</div>
+<div class="match team-only">RB Leipzig vs SV 07 Elversberg</div>
+<div class="match team-only">Borussia Dortmund vs Eintracht Frankfurt</div>
+<div class="match team-only">Toulouse vs Troyes</div>
+<div class="match team-only">West Ham vs Southampton</div>
+<div class="match team-only">Wolves vs Watford</div>
+<div class="match team-only">Gil Vicente Barcelos vs Porto</div>
+<div class="match team-only">FC Utrecht vs PEC Zwolle</div>
+<div class="match team-only">Al-Kholood vs Al-Ettifaq FC</div>
+<div class="match team-only">Royal Antwerp FC vs Royal Charleroi SC</div>
+<div class="match team-only">FK Teplice vs SK Artis Brno</div>
+
+<p class="note">Predictions, odds and booking code are reserved for VIP customers.</p>
 
 <a class="btn" href="https://paystack.shop/pay/-5y0qyoakx" target="_blank" rel="noopener noreferrer">💳 Pay GH₵40 for VIP 2</a>
 <a class="btn" href="https://wa.me/233597529539?text=Hello%20RealKingBhim%20Tips%2C%20I%20paid%20for%20VIP%202.%20Please%20confirm%20my%20payment." target="_blank" rel="noopener noreferrer">📲 Confirm payment</a>
-<p class="note">After paying, contact WhatsApp to confirm payment and arrange access. Automatic VIP delivery is not active yet.</p>
+<p class="note">After payment, contact WhatsApp for payment confirmation and VIP details.</p>
 </section>
 
-<!-- VIP 3 -->
+<!-- VIP 3: TEAMS ONLY BEFORE PAYMENT -->
 <section class="card vip" id="vip3">
 <h2>👑 VIP 3</h2>
-<span class="tag">VIP 3 ACCESS</span>
+<span class="tag">PREMIUM ACCESS</span>
 <p class="price">GH₵70</p>
 <p>2 teams</p>
 
-<div class="match">Racing Santander vs Espanyol</div>
-<div class="match">Atletico Madrid vs RC Deportivo de A Coruna</div>
+<div class="match team-only">Racing Santander vs Espanyol</div>
+<div class="match team-only">Atletico Madrid vs RC Deportivo de A Coruna</div>
+
+<p class="note">Predictions, odds and booking code are reserved for VIP customers.</p>
 
 <a class="btn" href="https://paystack.shop/pay/sdofh9gf46" target="_blank" rel="noopener noreferrer">💳 Pay GH₵70 for VIP 3</a>
 <a class="btn" href="https://wa.me/233597529539?text=Hello%20RealKingBhim%20Tips%2C%20I%20paid%20for%20VIP%203.%20Please%20confirm%20my%20payment." target="_blank" rel="noopener noreferrer">📲 Confirm payment</a>
-<p class="note">After paying, contact WhatsApp to confirm payment and arrange access. Automatic VIP delivery is not active yet.</p>
+<p class="note">After payment, contact WhatsApp for payment confirmation and VIP details.</p>
 </section>
 
-<!-- CONTACT -->
 <section class="card" id="contact">
 <h2>📲 Contact Us</h2>
 <p>Questions about free games or VIP membership?</p>
@@ -160,7 +213,8 @@ main{max-width:850px;margin:auto;padding:16px}
 function copyBookingCode(){
  const code=document.getElementById('bookingCode').textContent.trim();
  const message=document.getElementById('copyMessage');
- if(navigator.clipboard&&window.isSecureContext){
+
+ if(navigator.clipboard && window.isSecureContext){
   navigator.clipboard.writeText(code)
    .then(()=>{message.textContent='Booking code copied: '+code;})
    .catch(()=>fallbackCopy(code,message));
@@ -168,6 +222,7 @@ function copyBookingCode(){
   fallbackCopy(code,message);
  }
 }
+
 function fallbackCopy(code,message){
  const input=document.createElement('textarea');
  input.value=code;
@@ -175,12 +230,16 @@ function fallbackCopy(code,message){
  input.style.opacity='0';
  document.body.appendChild(input);
  input.select();
+
  try{
   const copied=document.execCommand('copy');
-  message.textContent=copied?'Booking code copied: '+code:'Please copy the code manually: '+code;
+  message.textContent=copied
+   ? 'Booking code copied: '+code
+   : 'Please copy the code manually: '+code;
  }catch(e){
   message.textContent='Please copy the code manually: '+code;
  }
+
  document.body.removeChild(input);
 }
 </script>
