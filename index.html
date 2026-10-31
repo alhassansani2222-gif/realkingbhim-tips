@@ -1,6 +1,43 @@
 
+}
 
-<!DOCTYPE html>
+function copyCode() {
+  const code = document.getElementById("freeCode").innerText;
+
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(code)
+      .then(showCopied)
+      .catch(showError);
+  } else {
+    const area = document.createElement("textarea");
+    area.value = code;
+    document.body.appendChild(area);
+    area.select();
+
+    try {
+      document.execCommand("copy");
+      showCopied();
+    } catch (e) {
+      showError();
+    }
+
+    document.body.removeChild(area);
+  }
+}
+
+function showCopied() {
+  document.getElementById("copyMessage").innerText =
+    "Free booking code copied!";
+}
+
+function showError() {
+  document.getElementById("copyMessage").innerText =
+    "Please copy the code manually: EZV20M";
+}
+</script>
+
+</body>
+</html>DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
