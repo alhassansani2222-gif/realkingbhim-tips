@@ -3,40 +3,239 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RealKingBhim Tips | Rollover, VIP & Free Games</title>
+<title>RealKingBhim Tips | Today's Football Predictions</title>
 
 <style>
 *{box-sizing:border-box}
+
 body{
- margin:0;font-family:Arial,sans-serif;color:white;background:#07110e;
- background-image:
- linear-gradient(45deg,#10251b 25%,transparent 25%),
- linear-gradient(-45deg,#10251b 25%,transparent 25%),
- linear-gradient(45deg,transparent 75%,#10251b 75%),
- linear-gradient(-45deg,transparent 75%,#10251b 75%);
- background-size:36px 36px
+ margin:0;
+ font-family:Arial,sans-serif;
+ font-size:14px;
+ color:#17251c;
+ background:#eaf5ee;
 }
-header,footer{background:#10251b;text-align:center;padding:20px}
-header{border-bottom:2px solid #21d875}
-header h1{color:#21d875;margin:0 0 15px}
-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:15px}
-nav a{color:white;text-decoration:none;font-weight:bold}
-.container{width:92%;max-width:900px;margin:22px auto}
-.card{background:#10251b;border:1px solid #20583a;border-radius:12px;padding:18px;margin-bottom:18px}
-h2,h3{color:#21d875}
-.ticket{background:#091a11;border:1px solid #28563c;border-radius:9px;padding:14px;margin:12px 0}
-.teams{line-height:1.8}
-.price{font-size:21px;font-weight:bold;color:#21d875}
-.code{color:#21d875;font-weight:bold}
-input{width:100%;padding:14px;margin:12px 0;background:#07110e;color:white;border:1px solid #39724e;border-radius:7px;font-size:16px}
-button,.button{display:inline-block;background:#21d875;color:#06130c;padding:12px 17px;border:0;border-radius:7px;text-decoration:none;font-weight:bold;cursor:pointer}
+
+header{
+ background:#087b3d;
+ color:white;
+ text-align:center;
+ padding:20px 12px;
+}
+
+header h1{
+ margin:0 0 13px;
+ font-size:22px;
+ font-weight:900;
+}
+
+nav{
+ display:flex;
+ justify-content:center;
+ flex-wrap:wrap;
+ gap:13px;
+}
+
+nav a{
+ color:white;
+ text-decoration:none;
+ font-weight:bold;
+ font-size:12px;
+}
+
+.container{
+ width:94%;
+ max-width:850px;
+ margin:18px auto;
+}
+
+.welcome{
+ background:white;
+ padding:16px;
+ border-radius:13px;
+ margin-bottom:17px;
+ box-shadow:0 3px 12px #00000012;
+}
+
+.welcome h2{
+ color:#087b3d;
+ margin-top:0;
+}
+
+h2{font-size:19px}
+h3{font-size:16px}
+
+.ticket-card{
+ background:white;
+ border-radius:14px;
+ margin-bottom:18px;
+ overflow:hidden;
+ box-shadow:0 4px 15px #00000015;
+ border:1px solid #d5e8da;
+}
+
+.ticket-header{
+ background:#087b3d;
+ color:white;
+ padding:14px;
+ text-align:center;
+}
+
+.ticket-header h2{
+ margin:0;
+ font-size:19px;
+}
+
+.ticket-body{
+ padding:15px;
+ text-align:center;
+}
+
+.ticket-body p{
+ font-size:13px;
+ line-height:1.6;
+}
+
+.ticket-label{
+ display:inline-block;
+ background:#e0f5e7;
+ color:#087b3d;
+ font-size:12px;
+ font-weight:900;
+ padding:6px 13px;
+ border-radius:30px;
+ margin-bottom:10px;
+}
+
+.odds{
+ font-size:27px;
+ font-weight:900;
+ color:#087b3d;
+ margin:7px 0;
+}
+
+.price{
+ font-size:18px;
+ font-weight:900;
+ color:#087b3d;
+ margin:10px 0;
+}
+
+.lock{
+ font-size:30px;
+ margin:7px;
+}
+
+.locked-text{
+ color:#526459;
+ font-size:13px;
+ line-height:1.6;
+}
+
+.button{
+ display:inline-block;
+ background:#087b3d;
+ color:white;
+ text-decoration:none;
+ padding:11px 15px;
+ border-radius:8px;
+ font-size:13px;
+ font-weight:900;
+ margin-top:9px;
+}
+
+.button:hover{background:#055b2d}
+
+.free-ticket{
+ background:white;
+ border:1px solid #087b3d;
+ border-radius:10px;
+ padding:12px;
+ text-align:left;
+ margin:10px 0;
+ line-height:1.6;
+}
+
+.free-ticket p{
+ border-bottom:1px solid #e4eee7;
+ padding-bottom:7px;
+ margin:7px 0;
+ font-size:13px;
+}
+
+.booking-code{
+ background:#e0f5e7;
+ color:#087b3d;
+ padding:11px;
+ border-radius:8px;
+ font-size:19px;
+ font-weight:900;
+ text-align:center;
+ letter-spacing:2px;
+}
+
+input{
+ width:100%;
+ padding:12px;
+ border:1px solid #b8d5c0;
+ border-radius:8px;
+ font-size:14px;
+ margin:10px 0;
+}
+
+button{
+ background:#087b3d;
+ color:white;
+ padding:11px 15px;
+ border:0;
+ border-radius:8px;
+ font-size:13px;
+ font-weight:bold;
+ cursor:pointer;
+}
+
 button:disabled{opacity:.6}
-.result{display:none;padding:14px;margin-top:14px;border-radius:8px;line-height:1.6}
-.success{display:block;background:#123d25;border:1px solid #21d875}
-.warning{display:block;background:#493316;border:1px solid #e5a43a}
-.error{display:block;background:#451d1d;border:1px solid #e45b5b}
-.small{font-size:13px;color:#c5d3ca}
-.empty{color:#aab9af;font-style:italic}
+
+.result{
+ display:none;
+ padding:12px;
+ margin-top:12px;
+ border-radius:8px;
+ line-height:1.6;
+ font-size:13px;
+}
+
+.success{
+ display:block;
+ background:#e0f5e7;
+ border:1px solid #087b3d;
+}
+
+.warning{
+ display:block;
+ background:#fff2d9;
+ border:1px solid #d99b24;
+}
+
+.error{
+ display:block;
+ background:#ffe6e6;
+ border:1px solid #d94b4b;
+}
+
+.small{
+ font-size:11px;
+ color:#65756a;
+}
+
+footer{
+ background:#075c30;
+ color:white;
+ text-align:center;
+ padding:18px;
+ margin-top:25px;
+ font-size:12px;
+}
 </style>
 </head>
 
@@ -46,7 +245,7 @@ button:disabled{opacity:.6}
 <h1>REALKINGBHIM TIPS</h1>
 <nav>
 <a href="#home">Home</a>
-<a href="#recovery">Rollover</a>
+<a href="#rollover">Rollover</a>
 <a href="#vip1">VIP 1</a>
 <a href="#vip2">VIP 2</a>
 <a href="#vip3">VIP 3</a>
@@ -57,125 +256,173 @@ button:disabled{opacity:.6}
 
 <main class="container">
 
-<section class="card" id="home">
+<section class="welcome" id="home">
 <h2>Welcome to RealKingBhim Tips</h2>
-<p>Welcome to RealKingBhim Tips! Get access to our Rollover Ticket, VIP selections and Free Games.</p>
-<p>Tomorrow's games are available for Wednesday, 4 November 2026.</p>
-<p>Choose your ticket and enjoy the games.</p>
+<p>Welcome to RealKingBhim Tips. Your destination for football predictions, VIP tickets, rollover games and free selections.</p>
+<p><strong>Today's games are available!</strong></p>
+<p>Choose your preferred ticket and unlock your predictions after payment.</p>
 </section>
 
 <!-- ROLLOVER -->
-<section class="card" id="recovery">
+<section class="ticket-card" id="rollover">
+<div class="ticket-header">
 <h2>ROLLOVER TICKET</h2>
-<p>Enter the phone number you used when purchasing your previous ticket to check your eligibility and price.</p>
+</div>
 
-<label for="recoveryPhone"><strong>Enter your phone number:</strong></label>
-<input id="recoveryPhone" type="tel" placeholder="Example: 0545267071" autocomplete="tel">
+<div class="ticket-body">
+<div class="ticket-label">BOMBA</div>
+<div class="odds">10 ODDS</div>
+<div class="lock">🔒</div>
 
-<button id="checkButton" type="button" onclick="checkEligibility()">CHECK ELIGIBILITY</button>
+<p class="locked-text">
+Rollover predictions are locked. Check your eligibility and unlock your ticket.
+</p>
+
+<h3>Check Rollover Eligibility</h3>
+<p>Enter the phone number you used for your previous purchase.</p>
+
+<input
+ id="recoveryPhone"
+ type="tel"
+ placeholder="Example: 0545267071"
+ autocomplete="tel"
+>
+
+<button id="checkButton" type="button" onclick="checkEligibility()">
+CHECK ELIGIBILITY
+</button>
 
 <div id="eligibilityResult" class="result" aria-live="polite"></div>
 
 <p class="small">Use the same phone number you used for your previous purchase.</p>
-
-<h3>Tomorrow's Rollover Selections</h3>
-<p class="small">Wednesday, 4 November 2026</p>
-
-<div class="ticket teams">
-<p>AEK Athens vs Real Madrid</p>
-<p>Wrexham AFC vs Middlesbrough FC</p>
-<p>Slavia Prague vs Arsenal</p>
-<p>RB Leipzig vs Man City</p>
-<p>Porto vs Napoli</p>
-<p>Bristol City vs Wolves</p>
-<p>PSV Eindhoven vs Club Brugge</p>
 </div>
-
-<p class="small">Booking code is provided after successful payment.</p>
 </section>
 
 <!-- VIP 1 -->
-<section class="card" id="vip1">
+<section class="ticket-card" id="vip1">
+<div class="ticket-header">
 <h2>VIP 1</h2>
-<p class="small">Wednesday, 4 November 2026</p>
-
-<div class="ticket">
-<h3>VIP 1 PACKAGE</h3>
-<p class="price">GH₵25</p>
-<p>No additional charges. Pay exactly GH₵25.</p>
-
-<div class="teams">
-<p>AEK Athens vs Real Madrid</p>
-<p>Fenerbahce Istanbul vs Liverpool</p>
-<p>Al-Taawoun FC vs Al Faisaly (Jor)</p>
-<p>Slavia Prague vs Arsenal</p>
-<p>RB Leipzig vs Man City</p>
-<p>Porto vs Napoli</p>
-<p>Borussia Dortmund vs Betis</p>
-<p>Lens vs Como 1907</p>
-<p>Viking FK vs Sabah Masazir</p>
-<p>PSV Eindhoven vs Club Brugge</p>
 </div>
 
-<a class="button" href="https://paystack.shop/pay/p5tgcalrh1">PAY GH₵25 FOR VIP 1</a>
-<p class="small">Your VIP 1 booking code will be provided after successful payment.</p>
+<div class="ticket-body">
+<div class="ticket-label">ACCUMULATED</div>
+<div class="odds">25 ODDS</div>
+<div class="lock">🔒</div>
+
+<p class="locked-text">
+VIP 1 predictions are available to paying subscribers only.
+Unlock your ticket to receive your booking code.
+</p>
+
+<div class="price">GH₵25</div>
+
+<a class="button" href="https://paystack.shop/pay/p5tgcalrh1" target="_blank" rel="noopener">
+UNLOCK VIP 1
+</a>
 </div>
 </section>
 
 <!-- VIP 2 -->
-<section class="card" id="vip2">
+<section class="ticket-card" id="vip2">
+<div class="ticket-header">
 <h2>VIP 2</h2>
-<div class="ticket">
-<p class="empty">No VIP 2 games available at the moment. Please check back later.</p>
+</div>
+
+<div class="ticket-body">
+<div class="ticket-label">GOLDEN TICKET</div>
+<div class="odds">55 ODDS</div>
+<div class="lock">🔒</div>
+
+<p class="locked-text">
+VIP 2 predictions are reserved for subscribers. Complete your payment to receive your ticket.
+</p>
+
+<div class="price">GH₵40</div>
+
+<a class="button" href="https://paystack.shop/pay/-5y0qyoakx" target="_blank" rel="noopener">
+UNLOCK VIP 2 — GH₵40
+</a>
 </div>
 </section>
 
 <!-- VIP 3 -->
-<section class="card" id="vip3">
+<section class="ticket-card" id="vip3">
+<div class="ticket-header">
 <h2>VIP 3</h2>
-<div class="ticket">
-<p class="empty">No VIP 3 games available at the moment. Please check back later.</p>
+</div>
+
+<div class="ticket-body">
+<div class="lock">🔒</div>
+<p class="locked-text">
+VIP 3 games are not available at the moment. Please check back later.
+</p>
 </div>
 </section>
 
 <!-- FREE GAMES -->
-<section class="card" id="free">
+<section class="ticket-card" id="free">
+<div class="ticket-header">
 <h2>FREE GAMES</h2>
-<p class="small">Wednesday, 4 November 2026</p>
-
-<div class="ticket teams">
-<p>AEK Athens vs Real Madrid — Away @ 1.25</p>
-<p>Slavia Prague vs Arsenal — Away (1:0) @ 1.72</p>
-<p>RB Leipzig vs Man City — Away @ 1.59</p>
-<p>Fenerbahce Istanbul vs Liverpool — Away @ 1.52</p>
-<p>Lens vs Como 1907 — Away @ 2.20</p>
 </div>
 
-<p>Free Games Booking Code: <span class="code">90FRA9</span></p>
-<p class="small">Enjoy today's free selections from RealKingBhim Tips.</p>
+<div class="ticket-body">
+<div class="ticket-label">ENJOY TIPS</div>
+
+<p>Today's free selections are available to everyone.</p>
+
+<div class="free-ticket">
+<p><strong>1.</strong> AC Milan vs Ferencvarosi Budapest — Home @ 1.37</p>
+<p><strong>2.</strong> Crystal Palace vs Hoffenheim — Over 2.5 @ 1.50</p>
+<p><strong>3.</strong> Real Sociedad vs Lyon — Away (0:2) @ 1.47</p>
+<p><strong>4.</strong> Sparta Prague vs Bournemouth — Away @ 1.48</p>
+<p><strong>5.</strong> Atalanta vs FC Kairat Almaty — Home (0:2) @ 2.15</p>
+<p><strong>6.</strong> Alkmaar vs Juventus — Away (0:1) @ 1.33</p>
+</div>
+
+<h3>FREE GAMES BOOKING CODE</h3>
+<div class="booking-code">CHKEP2</div>
+
+<p class="small">Enjoy your free selections from RealKingBhim Tips.</p>
+</div>
 </section>
 
 <!-- CONTACT -->
-<section class="card" id="contact">
-<h2>CONTACT</h2>
-<p>For support, contact RealKingBhim Tips.</p>
-<a class="button" href="https://wa.me/233597529539">CONTACT ON WHATSAPP</a>
+<section class="ticket-card" id="contact">
+<div class="ticket-header">
+<h2>CONTACT US</h2>
+</div>
+
+<div class="ticket-body">
+<p>Need help with payment or your ticket? Contact RealKingBhim Tips.</p>
+
+<a class="button" href="https://wa.me/233597529539" target="_blank" rel="noopener">
+CONTACT ON WHATSAPP
+</a>
+</div>
 </section>
 
 </main>
 
-<footer>© 2026 RealKingBhim Tips. All rights reserved.</footer>
+<footer>
+<p>© 2026 RealKingBhim Tips. All rights reserved.</p>
+</footer>
 
 <script>
-const WORKER_URL = "https://tight-haze-5e01realkingbhim-payment.alhassansani2222.workers.dev/";
+const WORKER_URL =
+"https://tight-haze-5e01realkingbhim-payment.alhassansani2222.workers.dev/";
 
-const ELIGIBLE_PAYMENT_LINK = "https://paystack.shop/pay/8hmhxhcj2q";
-const STANDARD_PAYMENT_LINK = "https://paystack.shop/pay/sw16liz1yx";
+const ELIGIBLE_PAYMENT_LINK =
+"https://paystack.shop/pay/8hmhxhcj2q";
+
+const STANDARD_PAYMENT_LINK =
+"https://paystack.shop/pay/sw16liz1yx";
 
 async function checkEligibility(){
+
  const phoneInput = document.getElementById("recoveryPhone");
  const result = document.getElementById("eligibilityResult");
  const button = document.getElementById("checkButton");
+
  const phone = phoneInput.value.trim().replace(/\s+/g,"");
 
  result.className = "result";
@@ -183,7 +430,8 @@ async function checkEligibility(){
 
  if(!/^(0\d{9}|\+233\d{9}|233\d{9})$/.test(phone)){
   result.className = "result error";
-  result.textContent = "Please enter a valid Ghana phone number, for example 0545267071.";
+  result.textContent =
+  "Please enter a valid Ghana phone number, for example 0545267071.";
   return;
  }
 
@@ -192,40 +440,56 @@ async function checkEligibility(){
  result.textContent = "Checking your eligibility. Please wait...";
 
  try{
+
   const response = await fetch(WORKER_URL,{
    method:"POST",
    headers:{"Content-Type":"application/json"},
    body:JSON.stringify({phone:phone})
   });
 
-  if(!response.ok) throw new Error("The eligibility service is unavailable.");
+  if(!response.ok){
+   throw new Error("Eligibility service unavailable.");
+  }
 
   const data = await response.json();
 
   if(typeof data.eligible !== "boolean"){
-   throw new Error("The Worker has not returned an eligibility result.");
+   throw new Error("No eligibility result returned.");
   }
 
   if(data.eligible){
+
    result.className = "result success";
+
    result.innerHTML =
-    "<strong>You are eligible for the Rollover subscriber price!</strong>" +
-    "<p>Rollover Ticket price: <strong>GH₵25</strong></p>" +
-    '<a class="button" href="' + ELIGIBLE_PAYMENT_LINK + '" target="_blank" rel="noopener">PAY GH₵25</a>';
+   "<strong>You are eligible for the Rollover subscriber price!</strong>" +
+   "<p>Rollover Ticket price: <strong>GH₵25</strong></p>" +
+   '<a class="button" href="' + ELIGIBLE_PAYMENT_LINK +
+   '" target="_blank" rel="noopener">PAY GH₵25</a>';
+
   }else{
+
    result.className = "result warning";
+
    result.innerHTML =
-    "<strong>Your number is not on the eligible subscriber list.</strong>" +
-    "<p>Standard Rollover Ticket price: <strong>GH₵60</strong></p>" +
-    '<a class="button" href="' + STANDARD_PAYMENT_LINK + '" target="_blank" rel="noopener">PAY GH₵60</a>';
+   "<strong>Your number is not on the eligible subscriber list.</strong>" +
+   "<p>Standard Rollover Ticket price: <strong>GH₵60</strong></p>" +
+   '<a class="button" href="' + STANDARD_PAYMENT_LINK +
+   '" target="_blank" rel="noopener">PAY GH₵60</a>';
+
   }
 
  }catch(error){
+
   result.className = "result error";
-  result.textContent = "We could not check your number. Please try again later or contact support.";
+  result.textContent =
+  "We could not check your number. Please try again later or contact support.";
+
  }finally{
+
   button.disabled = false;
   button.textContent = "CHECK ELIGIBILITY";
+
  }
 }
 </script>
