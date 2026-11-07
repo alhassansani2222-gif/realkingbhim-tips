@@ -1,240 +1,150 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RealKingBhim Tips | Today's Football Predictions</title>
+<title>RealKingBhim Tips | Premium Football Tips</title>
 
 <style>
 *{box-sizing:border-box}
-
+html{scroll-behavior:smooth}
 body{
  margin:0;
  font-family:Arial,sans-serif;
- font-size:14px;
- color:#17251c;
- background:#eaf5ee;
+ font-size:13px;
+ color:#f5fff8;
+ background:#06120d;
 }
-
 header{
- background:#087b3d;
- color:white;
- text-align:center;
- padding:20px 12px;
+ background:linear-gradient(120deg,#062b19,#087b3d,#064326);
+ color:white;text-align:center;padding:24px 12px;
+ border-bottom:2px solid #d6ae48;
 }
-
-header h1{
- margin:0 0 13px;
- font-size:22px;
- font-weight:900;
+header h1{margin:0 0 8px;font-size:25px;font-weight:900;letter-spacing:1px}
+header p{color:#d8f7e2;margin:5px}
+nav{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:17px}
+nav a{color:white;text-decoration:none;font-size:12px;font-weight:bold}
+nav a:hover{color:#ffd76b}
+.container{width:94%;max-width:900px;margin:20px auto}
+.hero{
+ text-align:center;padding:25px 15px;border-radius:16px;
+ background:linear-gradient(135deg,#103b26,#071b12);
+ border:1px solid #b58c35;
+ box-shadow:0 5px 22px #0008;margin-bottom:20px;
 }
-
-nav{
- display:flex;
- justify-content:center;
- flex-wrap:wrap;
- gap:13px;
+.hero h2{font-size:23px;color:#f5d47a;margin:5px}
+.hero p{color:#d4e8d9;line-height:1.6}
+.hero-tag{
+ display:inline-block;background:#d4aa46;color:#18200e;
+ padding:7px 13px;border-radius:30px;font-weight:900;
+ margin-bottom:9px;
 }
-
-nav a{
- color:white;
- text-decoration:none;
- font-weight:bold;
- font-size:12px;
+.stats{
+ display:grid;grid-template-columns:repeat(4,1fr);
+ gap:8px;margin:17px 0;
 }
-
-.container{
- width:94%;
- max-width:850px;
- margin:18px auto;
+.stat{
+ background:#10291c;border:1px solid #92752f;
+ border-radius:10px;text-align:center;padding:12px 5px;
 }
-
-.welcome{
- background:white;
- padding:16px;
- border-radius:13px;
- margin-bottom:17px;
- box-shadow:0 3px 12px #00000012;
+.stat strong{display:block;color:#f4cf68;font-size:18px}
+.stat span{font-size:10px;color:#d9e8dc}
+.section-title{
+ text-align:center;color:#f5d47a;font-size:21px;
+ margin:28px 0 14px;
 }
-
-.welcome h2{
- color:#087b3d;
- margin-top:0;
-}
-
-h2{font-size:19px}
-h3{font-size:16px}
-
 .ticket-card{
- background:white;
- border-radius:14px;
- margin-bottom:18px;
- overflow:hidden;
- box-shadow:0 4px 15px #00000015;
- border:1px solid #d5e8da;
+ background:linear-gradient(145deg,#10291c,#091a11);
+ border:1px solid #95752f;border-radius:15px;
+ margin-bottom:17px;overflow:hidden;
+ box-shadow:0 5px 18px #0007;
 }
-
 .ticket-header{
- background:#087b3d;
- color:white;
- padding:14px;
- text-align:center;
+ background:linear-gradient(100deg,#07552e,#118348);
+ padding:15px;text-align:center;border-bottom:1px solid #d5ae4c;
 }
-
-.ticket-header h2{
- margin:0;
- font-size:19px;
-}
-
-.ticket-body{
- padding:15px;
- text-align:center;
-}
-
-.ticket-body p{
- font-size:13px;
- line-height:1.6;
-}
-
+.ticket-header h2{margin:0;font-size:19px;color:white}
+.ticket-body{text-align:center;padding:17px}
 .ticket-label{
- display:inline-block;
- background:#e0f5e7;
- color:#087b3d;
- font-size:12px;
- font-weight:900;
- padding:6px 13px;
- border-radius:30px;
- margin-bottom:10px;
+ display:inline-block;background:#f0cf73;color:#20200e;
+ font-size:11px;font-weight:900;padding:6px 14px;
+ border-radius:30px;margin-bottom:8px;
 }
-
-.odds{
- font-size:27px;
- font-weight:900;
- color:#087b3d;
- margin:7px 0;
-}
-
-.price{
- font-size:18px;
- font-weight:900;
- color:#087b3d;
- margin:10px 0;
-}
-
-.lock{
- font-size:30px;
- margin:7px;
-}
-
-.locked-text{
- color:#526459;
- font-size:13px;
- line-height:1.6;
-}
-
+.odds{font-size:29px;font-weight:900;color:#f4d275;margin:7px}
+.lock{font-size:27px;margin:7px}
+.locked-text{color:#d1dfd5;line-height:1.7;font-size:13px}
+.price{font-size:21px;font-weight:900;color:#f4d275;margin:12px}
 .button{
- display:inline-block;
- background:#087b3d;
- color:white;
- text-decoration:none;
- padding:11px 15px;
- border-radius:8px;
- font-size:13px;
- font-weight:900;
- margin-top:9px;
+ display:inline-block;background:linear-gradient(100deg,#d7aa43,#f5d77e);
+ color:#17200f;text-decoration:none;padding:12px 18px;
+ border-radius:8px;font-weight:900;font-size:12px;margin:5px;
 }
-
-.button:hover{background:#055b2d}
-
+.button:hover{filter:brightness(1.12)}
+.button.green{background:#087b43;color:white}
+.button.telegram{background:#168ac0;color:white}
+.button.whatsapp{background:#128c50;color:white}
 .free-ticket{
- background:white;
- border:1px solid #087b3d;
- border-radius:10px;
- padding:12px;
- text-align:left;
- margin:10px 0;
- line-height:1.6;
+ background:#0b1e14;border:1px solid #477b56;
+ padding:12px;border-radius:10px;text-align:left;
+ line-height:1.6;margin:12px 0;
 }
-
-.free-ticket p{
- border-bottom:1px solid #e4eee7;
- padding-bottom:7px;
- margin:7px 0;
- font-size:13px;
-}
-
+.free-ticket p{padding-bottom:7px;border-bottom:1px solid #254332}
 .booking-code{
- background:#e0f5e7;
- color:#087b3d;
- padding:11px;
- border-radius:8px;
- font-size:19px;
- font-weight:900;
- text-align:center;
- letter-spacing:2px;
+ background:#e0f5e7;color:#087b3d;padding:12px;
+ border-radius:8px;font-size:20px;font-weight:900;
+ letter-spacing:3px;
 }
-
+.winners-intro{text-align:center;color:#d1dfd5;line-height:1.6}
+.winner-grid{
+ display:grid;grid-template-columns:1fr 1fr;gap:13px;
+}
+.winner-card{
+ background:#10291c;border:1px solid #b18b3d;
+ border-radius:13px;padding:10px;text-align:center;overflow:hidden;
+}
+.winner-card img{
+ display:block;width:100%;height:auto;max-height:510px;
+ object-fit:contain;border-radius:8px;background:#080e0a;
+}
+.winner-card h3{color:#f5d47a;margin:11px 0 5px;font-size:15px}
+.winner-card p{color:#d7e8dc;margin:5px}
+.won{color:#5de28b;font-weight:900}
+.social{
+ text-align:center;padding:18px;background:#10291c;
+ border:1px solid #92752f;border-radius:14px;
+}
+.social p{color:#d1dfd5;line-height:1.6}
+.contact-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:8px}
 input{
- width:100%;
- padding:12px;
- border:1px solid #b8d5c0;
- border-radius:8px;
- font-size:14px;
- margin:10px 0;
+ width:100%;padding:13px;border:1px solid #638b6d;
+ border-radius:8px;background:#f8fff9;color:#15251a;
+ font-size:14px;margin:10px 0;
 }
-
 button{
- background:#087b3d;
- color:white;
- padding:11px 15px;
- border:0;
- border-radius:8px;
- font-size:13px;
- font-weight:bold;
- cursor:pointer;
+ background:#d9b34f;color:#18200e;padding:12px 17px;
+ border:0;border-radius:8px;font-weight:900;cursor:pointer;
 }
-
 button:disabled{opacity:.6}
-
 .result{
- display:none;
- padding:12px;
- margin-top:12px;
- border-radius:8px;
- line-height:1.6;
- font-size:13px;
+ display:none;padding:12px;margin-top:12px;border-radius:8px;
+ line-height:1.6;text-align:left;
 }
-
-.success{
- display:block;
- background:#e0f5e7;
- border:1px solid #087b3d;
-}
-
-.warning{
- display:block;
- background:#fff2d9;
- border:1px solid #d99b24;
-}
-
-.error{
- display:block;
- background:#ffe6e6;
- border:1px solid #d94b4b;
-}
-
-.small{
- font-size:11px;
- color:#65756a;
-}
-
+.success{display:block;background:#e0f5e7;color:#07572d}
+.warning{display:block;background:#fff2d9;color:#664500}
+.error{display:block;background:#ffe6e6;color:#8b1616}
+.small{font-size:11px;color:#a9c2b0}
 footer{
- background:#075c30;
- color:white;
- text-align:center;
- padding:18px;
- margin-top:25px;
- font-size:12px;
+ background:#041009;color:#cbd9ce;text-align:center;
+ padding:20px;margin-top:28px;border-top:1px solid #8c702f;
+}
+@media(max-width:600px){
+ header h1{font-size:21px}
+ .stats{grid-template-columns:repeat(2,1fr)}
+ .winner-grid{grid-template-columns:1fr 1fr;gap:8px}
+ .winner-card{padding:7px}
+ .winner-card h3{font-size:12px}
+ .odds{font-size:26px}
 }
 </style>
 </head>
@@ -242,134 +152,105 @@ footer{
 <body>
 
 <header>
-<h1>REALKINGBHIM TIPS</h1>
+<h1>⚽ REALKINGBHIM TIPS</h1>
+<p>PREMIUM FOOTBALL PREDICTIONS</p>
 <nav>
-<a href="#home">Home</a>
-<a href="#rollover">Rollover</a>
+<a href="#home">HOME</a>
+<a href="#rollover">ROLLOVER</a>
 <a href="#vip1">VIP 1</a>
 <a href="#vip2">VIP 2</a>
 <a href="#vip3">VIP 3</a>
-<a href="#free">Free Games</a>
-<a href="#contact">Contact</a>
+<a href="#free">FREE GAMES</a>
+<a href="#winners">WINNERS</a>
+<a href="#contact">CONTACT</a>
 </nav>
 </header>
 
 <main class="container">
 
-<section class="welcome" id="home">
-<h2>Welcome to RealKingBhim Tips</h2>
-<p>Welcome to RealKingBhim Tips. Your destination for football predictions, VIP tickets, rollover games and free selections.</p>
-<p><strong>Today's games are available!</strong></p>
-<p>Choose your preferred ticket and unlock your predictions after payment.</p>
+<section class="hero" id="home">
+<div class="hero-tag">PREMIUM TIPS PLATFORM</div>
+<h2>WELCOME TO REALKINGBHIM TIPS</h2>
+<p>Your destination for football predictions, VIP tickets, rollover offers and free games.</p>
+<p><strong>Today's tickets are ready. Choose your package and unlock your predictions.</strong></p>
+<div class="contact-buttons">
+<a class="button telegram" href="https://t.me/+5b8jbYiocmdhNWNk" target="_blank" rel="noopener">JOIN TELEGRAM</a>
+<a class="button whatsapp" href="https://wa.me/233597529539" target="_blank" rel="noopener">WHATSAPP</a>
+</div>
 </section>
+
+<section class="stats">
+<div class="stat"><strong>30</strong><span>VIP 1 ODDS</span></div>
+<div class="stat"><strong>13</strong><span>ROLLOVER ODDS</span></div>
+<div class="stat"><strong>68</strong><span>VIP 2 ODDS</span></div>
+<div class="stat"><strong>160</strong><span>VIP 3 ODDS</span></div>
+</section>
+
+<h2 class="section-title">EXCLUSIVE VIP PACKAGES</h2>
 
 <!-- ROLLOVER -->
 <section class="ticket-card" id="rollover">
-<div class="ticket-header">
-<h2>ROLLOVER TICKET</h2>
-</div>
-
+<div class="ticket-header"><h2>♛ ROLLOVER TICKET</h2></div>
 <div class="ticket-body">
-<div class="ticket-label">BOMBA</div>
-<div class="odds">10 ODDS</div>
+<div class="ticket-label">BOMBA PACKAGE</div>
+<div class="odds">13 ODDS</div>
 <div class="lock">🔒</div>
+<p class="locked-text">Rollover predictions are locked. Check your eligibility to access the subscriber price.</p>
 
-<p class="locked-text">
-Rollover predictions are locked. Check your eligibility and unlock your ticket.
-</p>
-
-<h3>Check Rollover Eligibility</h3>
-<p>Enter the phone number you used for your previous purchase.</p>
-
-<input
- id="recoveryPhone"
- type="tel"
- placeholder="Example: 0545267071"
- autocomplete="tel"
->
-
-<button id="checkButton" type="button" onclick="checkEligibility()">
-CHECK ELIGIBILITY
-</button>
-
+<h3>CHECK ROLLOVER ELIGIBILITY</h3>
+<p>Enter the phone number used for your previous purchase.</p>
+<input id="recoveryPhone" type="tel" placeholder="Example: 0545267071" autocomplete="tel">
+<button id="checkButton" type="button" onclick="checkEligibility()">CHECK ELIGIBILITY</button>
 <div id="eligibilityResult" class="result" aria-live="polite"></div>
-
 <p class="small">Use the same phone number you used for your previous purchase.</p>
 </div>
 </section>
 
 <!-- VIP 1 -->
 <section class="ticket-card" id="vip1">
-<div class="ticket-header">
-<h2>VIP 1</h2>
-</div>
-
+<div class="ticket-header"><h2>♛ VIP 1</h2></div>
 <div class="ticket-body">
-<div class="ticket-label">ACCUMULATED</div>
-<div class="odds">25 ODDS</div>
+<div class="ticket-label">ACCUMULATED BOMBA</div>
+<div class="odds">30 ODDS</div>
 <div class="lock">🔒</div>
-
-<p class="locked-text">
-VIP 1 predictions are available to paying subscribers only.
-Unlock your ticket to receive your booking code.
-</p>
-
+<p class="locked-text">Exclusive VIP 1 predictions. Unlock your ticket after payment to receive your booking code.</p>
 <div class="price">GH₵25</div>
-
-<a class="button" href="https://paystack.shop/pay/p5tgcalrh1" target="_blank" rel="noopener">
-UNLOCK VIP 1
-</a>
+<a class="button" href="https://paystack.shop/pay/p5tgcalrh1" target="_blank" rel="noopener">UNLOCK VIP 1</a>
 </div>
 </section>
 
 <!-- VIP 2 -->
 <section class="ticket-card" id="vip2">
-<div class="ticket-header">
-<h2>VIP 2</h2>
-</div>
-
+<div class="ticket-header"><h2>♛ VIP 2 — GOLDEN TICKET</h2></div>
 <div class="ticket-body">
-<div class="ticket-label">GOLDEN TICKET</div>
-<div class="odds">55 ODDS</div>
+<div class="ticket-label">EXCLUSIVE COMBO</div>
+<div class="odds">68 ODDS</div>
 <div class="lock">🔒</div>
-
-<p class="locked-text">
-VIP 2 predictions are reserved for subscribers. Complete your payment to receive your ticket.
-</p>
-
+<p class="locked-text">Premium VIP 2 combo predictions. Complete payment to receive your booking code.</p>
 <div class="price">GH₵40</div>
-
-<a class="button" href="https://paystack.shop/pay/-5y0qyoakx" target="_blank" rel="noopener">
-UNLOCK VIP 2 — GH₵40
-</a>
+<a class="button" href="https://paystack.shop/pay/-5y0qyoakx" target="_blank" rel="noopener">UNLOCK VIP 2</a>
 </div>
 </section>
 
 <!-- VIP 3 -->
 <section class="ticket-card" id="vip3">
-<div class="ticket-header">
-<h2>VIP 3</h2>
-</div>
-
+<div class="ticket-header"><h2>♛ VIP 3</h2></div>
 <div class="ticket-body">
+<div class="ticket-label">HIGH ODDS PACKAGE</div>
+<div class="odds">160 ODDS</div>
 <div class="lock">🔒</div>
-<p class="locked-text">
-VIP 3 games are not available at the moment. Please check back later.
-</p>
+<p class="locked-text">VIP 3 premium predictions. Unlock your ticket after payment.</p>
+<div class="price">GH₵70</div>
+<a class="button" href="https://paystack.shop/pay/sdofh9gf46" target="_blank" rel="noopener">UNLOCK VIP 3</a>
 </div>
 </section>
 
 <!-- FREE GAMES -->
 <section class="ticket-card" id="free">
-<div class="ticket-header">
-<h2>FREE GAMES</h2>
-</div>
-
+<div class="ticket-header"><h2>FREE GAMES</h2></div>
 <div class="ticket-body">
 <div class="ticket-label">ENJOY TIPS</div>
-
-<p>Today's free selections are available to everyone.</p>
-
+<p class="locked-text">Today's free selections are available to everyone.</p>
 <div class="free-ticket">
 <p><strong>1.</strong> AC Milan vs Ferencvarosi Budapest — Home @ 1.37</p>
 <p><strong>2.</strong> Crystal Palace vs Hoffenheim — Over 2.5 @ 1.50</p>
@@ -378,33 +259,54 @@ VIP 3 games are not available at the moment. Please check back later.
 <p><strong>5.</strong> Atalanta vs FC Kairat Almaty — Home (0:2) @ 2.15</p>
 <p><strong>6.</strong> Alkmaar vs Juventus — Away (0:1) @ 1.33</p>
 </div>
-
 <h3>FREE GAMES BOOKING CODE</h3>
 <div class="booking-code">CHKEP2</div>
-
 <p class="small">Enjoy your free selections from RealKingBhim Tips.</p>
 </div>
 </section>
 
-<!-- CONTACT -->
-<section class="ticket-card" id="contact">
-<div class="ticket-header">
-<h2>CONTACT US</h2>
+<!-- WINNERS SHOWCASE -->
+<section id="winners">
+<h2 class="section-title">🏆 WINNERS SHOWCASE 🏆</h2>
+<p class="winners-intro">Celebrating winning tickets shared with RealKingBhim Tips. Results shown are from the submitted ticket screenshots.</p>
+
+<div class="winner-grid">
+<div class="winner-card">
+<img src="winner-1.jpg" alt="Winning ticket screenshot showing GH₵73,574.84 return" loading="lazy">
+<h3>🏆 BIG WIN</h3>
+<p class="won">GH₵73,574.84 RETURN</p>
+<p class="small">Winning ticket showcase</p>
 </div>
 
-<div class="ticket-body">
-<p>Need help with payment or your ticket? Contact RealKingBhim Tips.</p>
+<div class="winner-card">
+<img src="winner-2.jpg" alt="Winning ticket screenshot showing GH₵12,827.04 return" loading="lazy">
+<h3>🏆 WINNING TICKET</h3>
+<p class="won">GH₵12,827.04 RETURN</p>
+<p class="small">Winning ticket showcase</p>
+</div>
+</div>
+<p class="small" style="text-align:center;margin-top:12px">Past results do not guarantee future outcomes. Please bet responsibly.</p>
+</section>
 
-<a class="button" href="https://wa.me/233597529539" target="_blank" rel="noopener">
-CONTACT ON WHATSAPP
-</a>
+<!-- SOCIAL AND CONTACT -->
+<section class="ticket-card" id="contact">
+<div class="ticket-header"><h2>JOIN OUR COMMUNITY</h2></div>
+<div class="ticket-body social">
+<h3>Stay connected with RealKingBhim Tips</h3>
+<p>Join our Telegram community or contact us directly for assistance with payments and tickets.</p>
+<div class="contact-buttons">
+<a class="button telegram" href="https://t.me/+5b8jbYiocmdhNWNk" target="_blank" rel="noopener">✈ JOIN TELEGRAM</a>
+<a class="button whatsapp" href="https://wa.me/233597529539" target="_blank" rel="noopener">CONTACT WHATSAPP</a>
+</div>
 </div>
 </section>
 
 </main>
 
 <footer>
+<p><strong>REALKINGBHIM TIPS</strong></p>
 <p>© 2026 RealKingBhim Tips. All rights reserved.</p>
+<p class="small">Bet responsibly. No prediction guarantees a win.</p>
 </footer>
 
 <script>
