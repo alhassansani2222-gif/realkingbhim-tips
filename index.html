@@ -3,201 +3,149 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#06120d">
-<title>RealKingBhim Tips | Premium Football Tips</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050d09">
+<title>RealKingBhim Tips | Premium Football Predictions</title>
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{
-  font-family:Arial,sans-serif;
-  background:#06120d;
-  color:#fff;
-  line-height:1.6;
+ font-family:Arial,sans-serif;
+ background:#050d09;color:#fff;line-height:1.5;
 }
 header{
-  padding:22px 16px;
-  text-align:center;
-  background:linear-gradient(135deg,#102e20,#06120d);
-  border-bottom:2px solid #d9ae45;
+ text-align:center;padding:23px 12px;
+ background:linear-gradient(130deg,#143b25,#06130b,#1b321d);
+ border-bottom:2px solid #d6ad48;
 }
-.logo{
-  font-size:27px;
-  font-weight:900;
-  color:#20e582;
-  letter-spacing:1px;
-}
-header p{color:#ccc;font-size:12px}
+.logo{font-size:27px;font-weight:900;color:#35f18c}
+header p{font-size:11px;color:#d4e4d9;letter-spacing:3px}
 nav{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:10px;
-  padding:14px 8px;
-  background:#0c1c14;
-  position:sticky;
-  top:0;
-  z-index:10;
+ display:flex;justify-content:center;gap:9px;flex-wrap:wrap;
+ padding:13px 7px;background:#09170f;
+ position:sticky;top:0;z-index:20;
+ border-bottom:1px solid #23432e;
 }
 nav a{
-  color:#fff;
-  text-decoration:none;
-  font-size:12px;
-  font-weight:bold;
-  padding:8px 12px;
-  border-radius:20px;
-  background:#193c29;
+ color:#fff;text-decoration:none;font-size:11px;
+ font-weight:bold;padding:8px 12px;
+ background:#193c27;border-radius:20px;
 }
+nav a:hover{background:#2be47e;color:#041009}
 .hero{
-  padding:55px 18px;
-  text-align:center;
-  background:
-  linear-gradient(90deg,rgba(2,15,9,.93),rgba(2,15,9,.65)),
-  url("https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1400&q=85");
-  background-size:cover;
-  background-position:center;
-  border-bottom:2px solid #1bd875;
+ text-align:center;padding:65px 17px;
+ background:
+ linear-gradient(90deg,rgba(2,12,7,.91),rgba(2,12,7,.62)),
+ url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1500&q=85");
+ background-position:center;background-size:cover;
+ border-bottom:2px solid #1edb78;
 }
-.hero h1{
-  font-size:34px;
-  color:#20e582;
-  line-height:1.2;
-  margin-bottom:14px;
+.hero .small{color:#e7c56e;font-weight:bold;letter-spacing:3px;font-size:11px}
+.hero h1{font-size:36px;line-height:1.15;margin:15px 0}
+.hero h1 span{color:#36ed89}
+.hero p{font-size:13px;color:#e0e8e2;max-width:480px;margin:auto}
+.hero-btn{
+ display:inline-block;margin-top:22px;padding:12px 23px;
+ background:linear-gradient(90deg,#1bd675,#8affb6);
+ color:#06130a;border-radius:30px;text-decoration:none;
+ font-weight:900;font-size:12px;
 }
-.hero p{color:#eee;font-size:14px}
-.hero .tag{
-  display:inline-block;
-  margin-top:20px;
-  background:#d9ae45;
-  color:#111;
-  padding:9px 18px;
-  border-radius:25px;
-  font-weight:bold;
+.container{max-width:900px;margin:auto;padding:28px 14px}
+.heading{
+ text-align:center;color:#37e98b;font-size:23px;
+ margin:10px 0 7px;
 }
-.container{
-  max-width:850px;
-  margin:auto;
-  padding:25px 14px;
-}
-.section-title{
-  text-align:center;
-  color:#20e582;
-  font-size:23px;
-  margin:12px 0 20px;
-}
+.subheading{text-align:center;color:#9eafa3;font-size:12px;margin-bottom:23px}
 .package{
-  background:linear-gradient(145deg,#142b1e,#09170f);
-  border:1px solid #286d45;
-  border-radius:17px;
-  padding:22px 17px;
-  margin-bottom:22px;
-  box-shadow:0 8px 25px #0008;
-  position:relative;
-  overflow:hidden;
+ background:linear-gradient(145deg,#142d1e,#09170f);
+ border:1px solid #286b43;border-radius:17px;
+ overflow:hidden;margin-bottom:24px;
+ box-shadow:0 10px 30px #0008;
 }
-.package.gold{border:1px solid #d9ae45}
-.package h2{
-  font-size:22px;
-  margin-bottom:5px;
-  color:#20e582;
+.package.gold{border:1px solid #c9a44c}
+.package-head{
+ text-align:center;padding:22px 14px;
+ background:linear-gradient(120deg,#16472c,#0a1a10);
 }
-.package.gold h2{color:#e8c35e}
-.package .description{
-  font-size:13px;
-  color:#bbb;
-  margin-bottom:15px;
+.gold .package-head{background:linear-gradient(120deg,#61481a,#241d0c)}
+.package-head .label{
+ font-size:10px;letter-spacing:2px;color:#d9c17b;
+ font-weight:bold;
 }
+.package-head h2{font-size:24px;margin:7px 0;color:#fff}
+.package-head p{font-size:12px;color:#d0ded4}
+.package-body{padding:19px}
+.total{
+ text-align:center;padding:14px;
+ background:#07130b;border:1px solid #294d34;
+ border-radius:12px;margin-bottom:17px;
+}
+.total strong{display:block;font-size:31px;color:#39ed8a}
+.gold .total strong{color:#f0ce70}
+.total span{font-size:11px;color:#a9b9ad;letter-spacing:2px}
 .price{
-  font-size:27px;
-  font-weight:900;
-  color:#fff;
-  margin:10px 0;
+ text-align:center;font-size:22px;font-weight:900;
+ margin-bottom:15px;
 }
-.price small{font-size:12px;color:#aaa}
-.stats{
-  display:flex;
-  gap:9px;
-  flex-wrap:wrap;
-  margin:15px 0;
+.match-title{
+ color:#35e987;font-size:13px;
+ margin-bottom:10px;
 }
-.stats span{
-  background:#193d29;
-  padding:7px 11px;
-  border-radius:7px;
-  color:#b9ffd2;
-  font-size:12px;
-}
-.gold .stats span{background:#443719;color:#ffe6a0}
-.matches{
-  background:#07120c;
-  border-radius:10px;
-  padding:13px;
-  margin:14px 0;
-}
-.matches h3{
-  font-size:14px;
-  color:#20e582;
-  margin-bottom:9px;
-}
+.gold .match-title{color:#e9c56e}
 .match{
-  padding:10px 4px;
-  border-bottom:1px solid #263a2c;
-  font-size:13px;
+ padding:12px 10px;margin:8px 0;
+ border-radius:8px;background:#0a1b10;
+ border:1px solid #1d3826;
+ font-size:13px;font-weight:bold;
+ display:flex;gap:10px;align-items:center;
 }
-.match:last-child{border:0}
-.match small{display:block;color:#999;font-size:11px}
-.btn{
-  display:block;
-  text-align:center;
-  text-decoration:none;
-  background:#19cf70;
-  color:#04150b;
-  padding:13px;
-  border-radius:9px;
-  font-weight:900;
-  margin-top:15px;
-  cursor:pointer;
-  border:0;
-  width:100%;
-  font-size:14px;
+.match-number{
+ color:#35ed89;font-size:12px;min-width:22px;
 }
-.gold .btn{
-  background:linear-gradient(90deg,#c3952e,#f5d77c);
+.gold .match-number{color:#e9c56e}
+.match small{
+ display:block;color:#82988a;font-size:10px;
+ font-weight:normal;margin-top:3px;
 }
-.free .btn{background:#fff;color:#10251b}
-.notice{
-  font-size:11px;
-  color:#aaa;
-  margin-top:10px;
-  text-align:center;
+.pay{
+ display:block;text-align:center;text-decoration:none;
+ background:linear-gradient(90deg,#20d879,#8affb5);
+ color:#04120a;font-weight:900;padding:14px;
+ border-radius:9px;margin-top:17px;font-size:13px;
 }
-.inactive{
-  display:none;
+.gold .pay{background:linear-gradient(90deg,#c49a36,#f5d981)}
+.hidden-note{text-align:center;color:#8ca394;font-size:10px;margin-top:10px}
+.free-code{
+ margin-top:17px;text-align:center;padding:14px;
+ border:1px dashed #31dc80;border-radius:10px;
+ background:#10281a;
+}
+.free-code span{display:block;color:#a5b8aa;font-size:11px}
+.free-code strong{font-size:25px;color:#3af08c;letter-spacing:4px}
+.free-code button{
+ margin-top:10px;border:0;border-radius:7px;
+ padding:9px 18px;background:#35e98a;
+ font-weight:bold;color:#06130a;
 }
 .banner{
-  border:1px solid #285c3c;
-  background:#0c2115;
-  padding:19px;
-  border-radius:14px;
-  text-align:center;
-  margin:25px 0;
+ text-align:center;padding:25px 15px;margin:25px 0;
+ background:linear-gradient(130deg,#173d25,#0a180e);
+ border:1px solid #326b43;border-radius:14px;
 }
-.banner h2{color:#20e582;font-size:20px}
-.banner p{font-size:13px;color:#ccc;margin-top:8px}
+.banner h2{color:#38ec8a;font-size:21px}
+.banner p{font-size:12px;color:#c0d0c5;margin-top:7px}
 footer{
-  text-align:center;
-  padding:28px 15px;
-  background:#030a06;
-  border-top:1px solid #24442f;
-  color:#999;
-  font-size:12px;
+ text-align:center;padding:28px 12px;
+ background:#020704;border-top:1px solid #25432d;
+ color:#85998b;font-size:11px;
 }
-footer strong{color:#20e582}
+footer strong{color:#36ed89;font-size:14px}
 @media(max-width:480px){
  .logo{font-size:23px}
  .hero h1{font-size:29px}
- .section-title{font-size:21px}
- .package{padding:18px 14px}
+ .hero{padding:52px 15px}
+ .package-body{padding:14px}
 }
 </style>
 </head>
@@ -205,146 +153,149 @@ footer strong{color:#20e582}
 <body>
 
 <header>
-  <div class="logo">⚽ REALKINGBHIM TIPS</div>
-  <p>FREE & PREMIUM FOOTBALL PREDICTIONS</p>
+ <div class="logo">⚽ REALKINGBHIM TIPS</div>
+ <p>PREMIUM FOOTBALL PREDICTIONS</p>
 </header>
 
 <nav>
-  <a href="#home">HOME</a>
-  <a href="#christmas">CHRISTMAS ODDS</a>
-  <a href="#vip3">VIP 3</a>
-  <a href="#free">FREE ODDS</a>
-  <a href="#contact">CONTACT</a>
+ <a href="#home">HOME</a>
+ <a href="#christmas">CHRISTMAS</a>
+ <a href="#vip3">VIP 3</a>
+ <a href="#free">FREE GAMES</a>
+ <a href="#contact">CONTACT</a>
 </nav>
 
 <section class="hero" id="home">
-  <h1>WELCOME TO<br>REALKINGBHIM TIPS</h1>
-  <p>Premium football predictions, daily fixtures and special odds packages.</p>
-  <div class="tag">YOUR FOOTBALL TIPS DESTINATION</div>
+ <div class="small">WELCOME TO THE HOME OF FOOTBALL TIPS</div>
+ <h1>WIN BIG WITH<br><span>REALKINGBHIM TIPS</span></h1>
+ <p>Discover our daily football predictions, premium packages and free games.</p>
+ <a class="hero-btn" href="#packages">EXPLORE PACKAGES</a>
 </section>
 
-<main class="container">
+<main class="container" id="packages">
 
-  <h2 class="section-title">🔥 AVAILABLE PACKAGES</h2>
+<h2 class="heading">🔥 TODAY'S AVAILABLE TICKETS</h2>
+<p class="subheading">Choose your package and get access to today's predictions.</p>
 
-  <!-- CHRISTMAS ODDS -->
-  <section class="package gold" id="christmas">
-    <h2>🎄 CHRISTMAS ODDS</h2>
-    <p class="description">Special Christmas football package</p>
+<!-- CHRISTMAS PACKAGE -->
+<section class="package gold" id="christmas">
+ <div class="package-head">
+  <div class="label">SPECIAL FOOTBALL PACKAGE</div>
+  <h2>🎄 CHRISTMAS ODDS</h2>
+  <p>Exclusive Christmas football ticket</p>
+ </div>
 
-    <div class="price">GH₵15 <small>/ package</small></div>
+ <div class="package-body">
+  <div class="total">
+   <strong>30 FIXED ODDS</strong>
+   <span>TOTAL COMBINED ODDS</span>
+  </div>
 
-    <div class="stats">
-      <span>20 ODDS</span>
-      <span>PREMIUM TICKET</span>
-    </div>
+  <div class="price">GH₵15</div>
+  <h3 class="match-title">⚽ MATCH FIXTURES — 12 NOVEMBER</h3>
 
-    <div class="matches">
-      <h3>⚽ TODAY'S MATCHES</h3>
-      <div class="match">
-        Christmas fixture 1
-        <small>Match details to be updated</small>
-      </div>
-      <div class="match">
-        Christmas fixture 2
-        <small>Match details to be updated</small>
-      </div>
-    </div>
+  <div class="match"><span class="match-number">01</span>Uzbekistan vs Russia</div>
+  <div class="match"><span class="match-number">02</span>Armenia vs Cyprus</div>
+  <div class="match"><span class="match-number">03</span>Calvo Sotelo Puertollano vs Albacete Balompie</div>
+  <div class="match"><span class="match-number">04</span>Ivory Coast vs Gambia</div>
+  <div class="match"><span class="match-number">05</span>Cameroon vs Namibia</div>
+  <div class="match"><span class="match-number">06</span>Czechia vs Spain</div>
+  <div class="match"><span class="match-number">07</span>England vs Croatia</div>
+  <div class="match"><span class="match-number">08</span>Albania vs Finland</div>
+  <div class="match"><span class="match-number">09</span>San Marino vs Belarus</div>
+  <div class="match"><span class="match-number">10</span>Montenegro vs Latvia</div>
+  <div class="match"><span class="match-number">11</span>Italy vs France</div>
+  <div class="match"><span class="match-number">12</span>SL Benfica Lisbon W vs FK Austria Wien</div>
 
-    <button class="btn" onclick="paymentNotice('Christmas Odds')">
-      GET CHRISTMAS ODDS
-    </button>
-    <p class="notice">Selections and booking code are not displayed publicly.</p>
-  </section>
+  <a class="pay" href="https://paystack.shop/pay/p5tgcalrh1">
+   PURCHASE CHRISTMAS ODDS — GH₵15
+  </a>
+  <p class="hidden-note">Individual selections and booking code are not displayed publicly.</p>
+ </div>
+</section>
 
-  <!-- VIP 3 -->
-  <section class="package" id="vip3">
-    <h2>👑 VIP 3 BOMBAZA</h2>
-    <p class="description">Our premium high-odds package</p>
+<!-- VIP 3 -->
+<section class="package" id="vip3">
+ <div class="package-head">
+  <div class="label">EXCLUSIVE PREMIUM ACCESS</div>
+  <h2>👑 VIP 3 BOMBAZA</h2>
+  <p>Our exclusive high-odds ticket</p>
+ </div>
 
-    <div class="price">GH₵150 <small>/ package</small></div>
+ <div class="package-body">
+  <div class="total">
+   <strong>209 ODDS</strong>
+   <span>TOTAL COMBINED ODDS</span>
+  </div>
 
-    <div class="stats">
-      <span>200 FIXED ODDS</span>
-      <span>VIP ACCESS</span>
-    </div>
+  <div class="price">GH₵150</div>
+  <h3 class="match-title">⚽ VIP 3 MATCH FIXTURES</h3>
 
-    <div class="matches">
-      <h3>⚽ MATCH LIST</h3>
-      <div class="match">
-        VIP 3 fixture 1
-        <small>Match details to be updated</small>
-      </div>
-      <div class="match">
-        VIP 3 fixture 2
-        <small>Match details to be updated</small>
-      </div>
-    </div>
+  <div class="match"><span class="match-number">01</span>Albania vs Finland</div>
+  <div class="match"><span class="match-number">02</span>SL Benfica Lisbon W vs FK Austria Wien</div>
 
-    <button class="btn" onclick="paymentNotice('VIP 3')">
-      GET VIP 3 ACCESS
-    </button>
-    <p class="notice">Paid selections and booking code are not displayed publicly.</p>
-  </section>
+  <a class="pay" href="https://paystack.shop/pay/sdofh9gf46">
+   PURCHASE VIP 3 — GH₵150
+  </a>
+  <p class="hidden-note">Individual selections and booking code are not displayed publicly.</p>
+ </div>
+</section>
 
-  <!-- FREE ODDS -->
-  <section class="package free" id="free">
-    <h2>🟢 FREE ODDS</h2>
-    <p class="description">Enjoy free football predictions from RealKingBhim Tips.</p>
+<!-- FREE GAMES -->
+<section class="package" id="free">
+ <div class="package-head">
+  <div class="label">EVERYONE IS WELCOME</div>
+  <h2>🟢 FREE GAMES</h2>
+  <p>Enjoy today's free football predictions</p>
+ </div>
 
-    <div class="price">FREE</div>
+ <div class="package-body">
+  <div class="total">
+   <strong>FREE ACCESS</strong>
+   <span>4 MATCHES</span>
+  </div>
 
-    <div class="stats">
-      <span>FREE ACCESS</span>
-      <span>EVERYONE WELCOME</span>
-    </div>
+  <h3 class="match-title">⚽ FREE MATCH FIXTURES</h3>
 
-    <div class="matches">
-      <h3>⚽ FREE MATCHES</h3>
-      <div class="match">
-        Free fixture 1
-        <small>Match details to be updated</small>
-      </div>
-      <div class="match">
-        Free fixture 2
-        <small>Match details to be updated</small>
-      </div>
-      <div class="match">
-        Free fixture 3
-        <small>Match details to be updated</small>
-      </div>
-      <div class="match">
-        Free fixture 4
-        <small>Match details to be updated</small>
-      </div>
-    </div>
+  <div class="match"><span class="match-number">01</span>SL Benfica Lisbon W vs FK Austria Wien</div>
+  <div class="match"><span class="match-number">02</span>Uzbekistan vs Russia</div>
+  <div class="match"><span class="match-number">03</span>CDA Navalcarnero vs Betis</div>
+  <div class="match"><span class="match-number">04</span>Italy vs France</div>
 
-    <p style="text-align:center;color:#20e582;font-size:13px">
-      Free booking code will be published with the daily fixtures.
-    </p>
-  </section>
+  <div class="free-code">
+   <span>YOUR FREE BOOKING CODE</span>
+   <strong id="freeCode">DTCV8W</strong>
+   <button onclick="copyFreeCode()">COPY FREE CODE</button>
+  </div>
+ </div>
+</section>
 
-  <section class="banner">
-    <h2>🏆 REALKINGBHIM TIPS</h2>
-    <p>Thank you for supporting our football tips community.</p>
-    <p>Stay updated for daily games and new packages.</p>
-  </section>
+<div class="banner">
+ <h2>🏆 REALKINGBHIM TIPS</h2>
+ <p>Quality predictions. Premium packages. Free opportunities.</p>
+ <p>Thank you for being part of our community.</p>
+</div>
 
 </main>
 
 <footer id="contact">
-  <strong>REALKINGBHIM TIPS</strong>
-  <p>Free & VIP Football Predictions</p>
-  <p>Play responsibly. Predictions are not guaranteed wins.</p>
-  <p>© 2026 RealKingBhim Tips. All rights reserved.</p>
+ <strong>REALKINGBHIM TIPS</strong>
+ <p>Premium Football Predictions</p>
+ <p>Play responsibly. Football predictions are not guaranteed wins.</p>
+ <p>© 2026 RealKingBhim Tips. All Rights Reserved.</p>
 </footer>
 
 <script>
-function paymentNotice(packageName){
-  alert(
-    packageName +
-    "\n\nPlease contact RealKingBhim Tips administrator for the correct payment link and access instructions."
+function copyFreeCode(){
+ const code="DTCV8W";
+ if(navigator.clipboard && window.isSecureContext){
+  navigator.clipboard.writeText(code).then(
+   ()=>alert("Free booking code copied: "+code),
+   ()=>alert("Your free code is: "+code)
   );
+ }else{
+  alert("Your free booking code is: "+code);
+ }
 }
 </script>
 
