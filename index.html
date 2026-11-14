@@ -1,296 +1,336 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RealKingBhim Tips | Christmas Odds Special</title>
+<title>RealKingBhim Tips | Christmas Odds</title>
+
 <style>
-:root {
-  --bg:#050d0a;
-  --panel:#10251b;
-  --green:#20e879;
-  --gold:#f5c451;
-  --white:#fff;
+:root{
+--bg:#050d0a;
+--green:#20e879;
+--gold:#f5c451;
+--panel:#10251b;
 }
 *{box-sizing:border-box}
+
 body{
- margin:0;background:radial-gradient(circle at top,#173b29,#050d0a 65%);
- color:white;font-family:Arial,sans-serif;font-size:14px;
+margin:0;
+background:radial-gradient(circle at top,#173b29,#050d0a 70%);
+color:#fff;
+font-family:Arial,sans-serif;
+font-size:14px;
 }
+
 header{
- padding:22px 15px;text-align:center;
- background:linear-gradient(135deg,#06140d,#173c25,#07100b);
- border-bottom:2px solid var(--gold);
+padding:23px 12px;
+text-align:center;
+background:linear-gradient(135deg,#06140d,#173c25,#07100b);
+border-bottom:2px solid var(--gold);
 }
-.logo{font-size:25px;font-weight:900;letter-spacing:1px}
+
+.logo{
+font-size:23px;
+font-weight:900;
+letter-spacing:1px;
+}
 .logo span{color:var(--green)}
+
 header p{color:#ddd;margin:8px 0 0}
+
 nav{
- display:flex;justify-content:center;gap:18px;flex-wrap:wrap;
- padding:13px;background:#09170f;position:sticky;top:0;z-index:10;
- border-bottom:1px solid #245b3a;
+display:flex;
+justify-content:center;
+gap:18px;
+padding:14px;
+background:#09170f;
+position:sticky;
+top:0;
+z-index:10;
+border-bottom:1px solid #245b3a;
 }
-nav a{color:white;text-decoration:none;font-weight:bold;font-size:12px}
-nav a:hover{color:var(--gold)}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:12px;
+font-weight:bold;
+}
+
 .hero{
- margin:18px auto;padding:35px 15px;max-width:1100px;
- text-align:center;border:1px solid #b58b35;border-radius:17px;
- background:linear-gradient(130deg,#102b1a,#080d0a 55%,#321d0a);
- box-shadow:0 0 25px #b58b3525;
+margin:18px auto;
+padding:35px 15px;
+max-width:1000px;
+text-align:center;
+border:1px solid var(--gold);
+border-radius:16px;
+background:linear-gradient(130deg,#102b1a,#080d0a 55%,#321d0a);
+box-shadow:0 0 25px #b58b3525;
 }
-.hero .small{color:var(--green);font-weight:bold;letter-spacing:3px}
+
+.hero .small{
+color:var(--green);
+font-weight:bold;
+letter-spacing:3px;
+}
+
 .hero h1{
- font-size:clamp(35px,7vw,65px);margin:12px 0;
- color:var(--gold);text-shadow:0 3px 15px #d69b25;
+font-size:clamp(38px,8vw,65px);
+margin:12px 0;
+color:var(--gold);
+text-shadow:0 3px 15px #d69b25;
 }
-.hero h2{font-size:20px;margin:8px}
-.hero p{color:#ddd;line-height:1.6}
-.container{max-width:1100px;margin:auto;padding:15px}
+
+.hero h2{
+font-size:21px;
+margin:8px;
+}
+
+.hero p{
+color:#ddd;
+line-height:1.7;
+}
+
+.container{
+max-width:750px;
+margin:auto;
+padding:15px;
+}
+
 .section-title{
- text-align:center;color:var(--gold);font-size:23px;
- margin:30px 0 18px;
+text-align:center;
+color:var(--gold);
+font-size:22px;
+margin:25px 0 18px;
 }
-.grid{
- display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
- gap:18px;
-}
+
 .card{
- background:linear-gradient(145deg,#142d20,#09130e);
- border:1px solid #286340;border-radius:15px;
- padding:20px;box-shadow:0 8px 25px #0008;
+background:linear-gradient(145deg,#142d20,#09130e);
+border:1px solid var(--gold);
+border-radius:16px;
+padding:22px;
+box-shadow:0 8px 25px #0008;
 }
-.card h2{font-size:22px;margin:5px 0 12px}
-.christmas{border:1px solid var(--gold)}
-.christmas h2{color:var(--gold)}
-.vip h2{color:#e5bd62}
-.free h2{color:var(--green)}
+
+.card h2{
+color:var(--gold);
+font-size:24px;
+margin:8px 0;
+}
+
 .tag{
- display:inline-block;padding:7px 12px;border-radius:20px;
- background:#283b2b;color:var(--gold);font-weight:bold;
- margin:5px 0 12px;font-size:12px;
+display:inline-block;
+padding:7px 12px;
+border-radius:20px;
+background:#283b2b;
+color:var(--gold);
+font-weight:bold;
+margin:8px 0 12px;
+font-size:11px;
 }
-.price{font-size:25px;color:var(--gold);font-weight:900;margin:12px 0}
-.description{color:#d3ded6;line-height:1.6}
+
+.description{
+color:#d3ded6;
+line-height:1.7;
+}
+
+.price{
+font-size:30px;
+color:var(--gold);
+font-weight:900;
+margin:15px 0;
+}
+
 .stats{
- display:flex;justify-content:space-between;gap:10px;
- padding:12px 0;border-top:1px solid #ffffff20;
- margin-top:12px;color:#ddd;
+display:flex;
+justify-content:space-between;
+gap:10px;
+padding:12px 0;
+border-top:1px solid #ffffff25;
+margin-top:10px;
 }
-.btn{
- display:block;text-align:center;text-decoration:none;
- padding:13px;margin-top:15px;border-radius:9px;
- background:linear-gradient(90deg,#13b85c,#25ec83);
- color:#04150b;font-weight:900;
- border:0;width:100%;cursor:pointer;
-}
-.btn:hover{filter:brightness(1.13)}
-.gold-btn{background:linear-gradient(90deg,#b78324,#ffdf83)}
+
 .match{
- padding:12px;margin:9px 0;background:#0a1c12;
- border:1px solid #245337;border-radius:9px;
- display:flex;justify-content:space-between;gap:10px;
+padding:15px 10px;
+margin:11px 0;
+background:#0a1c12;
+border:1px solid #286340;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+font-size:14px;
 }
-.match strong{color:white}
-.match span{color:var(--green);font-weight:bold;white-space:nowrap}
-.code{
- font-size:23px;letter-spacing:3px;color:var(--green);
- font-weight:900;text-align:center;padding:12px;
- background:#07140c;border:1px dashed var(--green);
- border-radius:8px;margin-top:12px;
+
+.match:hover{
+border-color:var(--gold);
 }
+
+.match-title{
+color:var(--gold);
+text-align:center;
+font-size:14px;
+margin:20px 0 12px;
+}
+
+.btn{
+display:block;
+text-align:center;
+text-decoration:none;
+padding:15px;
+margin-top:18px;
+border-radius:9px;
+background:linear-gradient(90deg,#b78324,#ffdf83);
+color:#07120b;
+font-weight:900;
+font-size:14px;
+}
+
 .notice{
- margin:25px 0;padding:17px;border-radius:12px;
- background:#29200e;border:1px solid var(--gold);
- color:#f7e2a8;text-align:center;line-height:1.7;
+margin:22px 0;
+padding:16px;
+border-radius:12px;
+background:#29200e;
+border:1px solid var(--gold);
+color:#f7e2a8;
+text-align:center;
+line-height:1.7;
 }
+
 footer{
- margin-top:35px;padding:25px 15px;text-align:center;
- background:#07120b;border-top:1px solid var(--gold);
- color:#aaa;line-height:1.8;
+margin-top:35px;
+padding:25px 15px;
+text-align:center;
+background:#07120b;
+border-top:1px solid var(--gold);
+color:#aaa;
+line-height:1.8;
 }
+
 footer strong{color:var(--green)}
+
 @media(max-width:500px){
- .logo{font-size:21px}
- nav{gap:12px}
- .card{padding:16px}
+.logo{font-size:20px}
+.card{padding:17px}
+nav{gap:12px}
 }
 </style>
 </head>
+
 <body>
 
 <header>
- <div class="logo">⚽ REALKINGBHIM <span>TIPS</span> 👑</div>
- <p>Your Winning Partner!</p>
- <p style="color:#f5c451">★ WIN WITH CONFIDENCE ★</p>
+<div class="logo">⚽ REALKINGBHIM <span>TIPS</span> 👑</div>
+<p>Your Winning Partner!</p>
+<p style="color:#f5c451">★ WIN WITH CONFIDENCE ★</p>
 </header>
 
 <nav>
- <a href="#home">⌂ HOME</a>
- <a href="#christmas">🎄 CHRISTMAS ODDS</a>
- <a href="#free">🎁 FREE GAMES</a>
- <a href="#vip3">💎 VIP 3</a>
- <a href="#contact">CONTACT</a>
+<a href="#home">HOME</a>
+<a href="#christmas">CHRISTMAS ODDS</a>
+<a href="#contact">CONTACT</a>
 </nav>
 
 <section class="hero" id="home">
- <div class="small">🎄 THE FESTIVE FOOTBALL SPECIAL 🎄</div>
- <h1>CHRISTMAS</h1>
- <h2>ODDS SPECIAL!</h2>
- <p>Big opportunities this Christmas season!</p>
- <p>Premium football tips • Free games • VIP packages</p>
- <div style="font-size:40px">⚽ 🎁 🎄 🏆</div>
+<div class="small">🎄 THE FESTIVE FOOTBALL SPECIAL 🎄</div>
+<h1>CHRISTMAS</h1>
+<h2>ODDS SPECIAL!</h2>
+<p>Exclusive Christmas football ticket.</p>
+<p>Premium football predictions from RealKingBhim Tips.</p>
+<div style="font-size:40px">⚽ 🎁 🎄 🏆</div>
 </section>
 
 <main class="container">
 
-<h2 class="section-title">🔥 AVAILABLE PACKAGES 🔥</h2>
+<h2 class="section-title">🔥 CHRISTMAS SPECIAL 🔥</h2>
 
-<div class="grid">
+<section class="card" id="christmas">
 
-<section class="card christmas" id="christmas">
- <div style="font-size:32px">🎄 🎅</div>
- <h2>CHRISTMAS ODDS</h2>
- <div class="tag">SPECIAL CHRISTMAS PACKAGE</div>
- <p class="description">
- Exclusive Christmas football ticket.
- Your selections and booking code are delivered
- through the successful purchase message.
- </p>
- <div class="price">GH₵15</div>
- <div class="stats">
-  <span>Package</span><strong>Christmas Odds</strong>
- </div>
- <div class="stats">
-  <span>Total Odds</span><strong>31.60</strong>
- </div>
- <div class="stats">
-  <span>Ticket</span><strong>11 selections</strong>
- </div>
- <a class="btn gold-btn"
- href="https://paystack.shop/pay/p5tgcalrh1"
- target="_blank" rel="noopener">
- 🎁 GET CHRISTMAS ODDS
- </a>
- <p style="font-size:11px;color:#aaa;text-align:center">
- Booking code is not displayed publicly.
- </p>
-</section>
+<div style="font-size:32px">🎄 🎅</div>
 
-<section class="card free" id="free">
- <div style="font-size:32px">🎁 ⚽</div>
- <h2>FREE GAMES</h2>
- <div class="tag">AVAILABLE TO EVERYONE</div>
- <p class="description">
- Enjoy free football tips. No payment required.
- Everyone can access this ticket.
- </p>
+<h2>CHRISTMAS ODDS</h2>
 
- <div class="match">
-  <strong>Argentina vs Uruguay</strong>
-  <span>Home @ 1.56</span>
- </div>
- <div class="match">
-  <strong>Zambia vs Burundi</strong>
-  <span>Home @ 1.67</span>
- </div>
- <div class="match">
-  <strong>Egypt vs Malawi</strong>
-  <span>Over 3 @ 2.00</span>
- </div>
+<div class="tag">SPECIAL CHRISTMAS PACKAGE</div>
 
- <div class="stats">
-  <span>Total Odds</span><strong>5.21</strong>
- </div>
+<p class="description">
+Get access to our exclusive Christmas football ticket.
+The featured teams are displayed below.
+Your betting selections and booking code are delivered
+after successful payment.
+</p>
 
- <p style="text-align:center;color:#ccc">FREE BOOKING CODE</p>
- <div class="code" id="freeCode">ASV6M3</div>
- <button class="btn" onclick="copyFreeCode()">
-  📋 COPY FREE CODE
- </button>
- <p id="copyMessage" style="text-align:center;color:#20e879"></p>
-</section>
+<div class="price">GH₵20</div>
 
-<section class="card vip" id="vip3">
- <div style="font-size:32px">💎 👑</div>
- <h2>VIP 3</h2>
- <div class="tag">EXCLUSIVER BOMBAZO</div>
- <p class="description">
- Premium VIP 3 fixed-odds package.
- Get access after successful payment.
- </p>
- <div class="price">GH₵150</div>
- <div class="stats">
-  <span>Package</span><strong>VIP 3</strong>
- </div>
- <div class="stats">
-  <span>Target</span><strong>200 Fixed Odds</strong>
- </div>
- <a class="btn gold-btn"
- href="https://paystack.shop/pay/sdofh9gf46"
- target="_blank" rel="noopener">
- 💎 GET VIP 3
- </a>
- <p style="font-size:11px;color:#aaa;text-align:center">
- Booking code is not displayed publicly.
- </p>
-</section>
-
+<div class="stats">
+<span>Package</span>
+<strong>Christmas Odds</strong>
 </div>
 
+<div class="stats">
+<span>Total Odds</span>
+<strong>63.16</strong>
+</div>
+
+<div class="stats">
+<span>Total Matches</span>
+<strong>4 Games</strong>
+</div>
+
+<h3 class="match-title">⚽ FEATURED MATCHES</h3>
+
+<div class="match">
+Romania vs Poland
+</div>
+
+<div class="match">
+Portugal vs Denmark
+</div>
+
+<div class="match">
+Sweden vs Bosnia &amp; Herzegovina
+</div>
+
+<div class="match">
+Algeria vs Togo
+</div>
+
+<a class="btn"
+href="https://paystack.shop/pay/p5tgcalrh1"
+target="_blank"
+rel="noopener">
+GET CHRISTMAS ODDS
+</a>
+
+<p style="font-size:11px;color:#aaa;text-align:center;margin-top:15px">
+Betting selections and booking code are not displayed publicly.
+</p>
+
+</section>
+
 <div class="notice">
- <strong>📢 IMPORTANT NOTICE</strong><br>
- VIP 2 and Rollover are temporarily inactive
- for the next two weeks.<br>
- <strong style="color:#20e879">
- Christmas Odds, Free Games and VIP 3 are active!
- </strong>
+<strong>IMPORTANT NOTICE</strong><br>
+Christmas Odds is currently our featured package.<br>
+<strong style="color:#20e879">
+Thank you for supporting RealKingBhim Tips!
+</strong>
 </div>
 
 <section id="contact" class="card" style="text-align:center">
- <h2 style="color:#f5c451">👑 REALKINGBHIM TIPS</h2>
- <p>Stay updated with our latest football tickets.</p>
- <p style="color:#20e879;font-weight:bold">
- LET'S WIN TOGETHER!
- </p>
+<h2>REALKINGBHIM TIPS</h2>
+<p>Stay updated with our latest football tickets.</p>
+<p style="color:#20e879;font-weight:bold">
+LET'S WIN TOGETHER!
+</p>
 </section>
 
 </main>
 
 <footer>
- <p>👑 <strong>REALKINGBHIM TIPS</strong> 👑</p>
- <p>© 2026 RealKingBhim Tips. All Rights Reserved.</p>
- <p>Bet responsibly. Football predictions are not guaranteed results.</p>
- <p style="color:#f5c451">🎄 Merry Christmas and Happy Winning! 🎄</p>
+<p>👑 <strong>REALKINGBHIM TIPS</strong> 👑</p>
+<p>© 2026 RealKingBhim Tips. All Rights Reserved.</p>
+<p>Bet responsibly. Football predictions are not guaranteed results.</p>
+<p style="color:#f5c451">🎄 Merry Christmas and Happy Winning! 🎄</p>
 </footer>
-
-<script>
-function copyFreeCode(){
- const code=document.getElementById("freeCode").textContent.trim();
- const message=document.getElementById("copyMessage");
- if(navigator.clipboard && window.isSecureContext){
-  navigator.clipboard.writeText(code)
-   .then(()=>message.textContent="Free code copied successfully!")
-   .catch(()=>fallbackCopy(code,message));
- }else{
-  fallbackCopy(code,message);
- }
-}
-function fallbackCopy(code,message){
- const input=document.createElement("textarea");
- input.value=code;
- document.body.appendChild(input);
- input.select();
- try{
-  document.execCommand("copy");
-  message.textContent="Free code copied successfully!";
- }catch(e){
-  message.textContent="Copy this code: "+code;
- }
- document.body.removeChild(input);
-}
-</script>
 
 </body>
 </html>
