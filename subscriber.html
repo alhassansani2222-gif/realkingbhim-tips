@@ -1,1 +1,55 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RealKingBhim Tips | Subscriber Dashboard</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#07110e;color:#fff;font-family:Arial,sans-serif;padding:20px}
+.container{max-width:480px;margin:35px auto;background:#10251b;padding:25px;border-radius:14px}
+h1{text-align:center;color:#21d875;font-size:23px}
+p{text-align:center;color:#ccc}
+input,button{width:100%;padding:14px;margin-top:13px;border-radius:7px;border:0}
+input{background:#fff;color:#111}
+button{background:#21d875;color:#07110e;font-weight:bold;font-size:16px}
+#message{color:#21d875;text-align:center}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>REAL KING BHIM TIPS</h1>
+<p>Subscriber Dashboard</p>
+
+<h3>Customer Login</h3>
+<input type="email" id="email" placeholder="Your email address">
+<input type="password" id="password" placeholder="Your password">
+<button onclick="login()">Login</button>
+
+<h3>Create Account</h3>
+<input type="text" id="name" placeholder="Your full name">
+<input type="email" id="newemail" placeholder="Your email address">
+<input type="password" id="newpassword" placeholder="Create password">
+<button onclick="register()">Register</button>
+
+<p id="message"></p>
+<div id="games"></div>
+</div>
+
+<script>
+const API = "https://hidden-paper-c2e7realkingbhimdashboard.alhassani2222.workers.dev";
+
+async function login(){
+ document.getElementById("message").textContent =
+ "Login is not connected yet. Please wait for backend setup.";
+}
+
+async function register(){
+ document.getElementById("message").textContent =
+ "Registration is not connected yet. Please wait for backend setup.";
+}
+</script>
+</body>
+</html>
+
