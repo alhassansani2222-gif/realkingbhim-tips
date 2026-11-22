@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RealKingBhim Tips | VIP & Christmas Odds</title>
+<title>RealKingBhim Tips | Christmas & VIP Games</title>
 
 <style>
 :root{
@@ -18,62 +18,60 @@ html{scroll-behavior:smooth}
 body{
 margin:0;
 background:radial-gradient(circle at top,#173b29,#050d0a 70%);
-color:#fff;
-font-family:Arial,sans-serif;
-font-size:13px;
+color:#fff;font-family:Arial,sans-serif;font-size:13px;
 }
 header{
-padding:20px 12px;
-text-align:center;
+padding:18px 12px;text-align:center;
 background:linear-gradient(135deg,#06140d,#173c25,#07100b);
 border-bottom:2px solid var(--gold);
 }
 .logo{font-size:21px;font-weight:900;letter-spacing:1px}
 .logo span{color:var(--green)}
-header p{color:#ddd;margin:7px 0 0}
+header p{color:#ddd;margin:6px 0}
 nav{
-display:flex;justify-content:center;gap:15px;
+display:flex;justify-content:center;gap:13px;
 padding:12px 5px;background:#09170f;
 position:sticky;top:0;z-index:10;
 border-bottom:1px solid #245b3a;flex-wrap:wrap;
 }
 nav a{color:white;text-decoration:none;font-size:11px;font-weight:bold}
 .hero{
-margin:16px auto;padding:25px 13px;max-width:950px;
+margin:15px auto;padding:22px 12px;max-width:950px;
 text-align:center;border:1px solid var(--gold);
 border-radius:14px;
 background:linear-gradient(130deg,#102b1a,#080d0a 55%,#321d0a);
 }
 .hero .small{color:var(--green);font-weight:bold;letter-spacing:2px}
-.hero h1{font-size:clamp(32px,7vw,52px);margin:10px 0;color:var(--gold)}
-.hero h2{font-size:18px;margin:7px}
-.hero p{color:#ddd;line-height:1.6}
+.hero h1{font-size:clamp(30px,7vw,45px);margin:10px 0;color:var(--gold)}
+.hero h2{font-size:16px;margin:7px}
+.hero p{color:#ddd;line-height:1.5}
 .container{max-width:750px;margin:auto;padding:12px}
-.section-title{text-align:center;color:var(--gold);font-size:19px;margin:25px 0 15px}
+.section-title{text-align:center;color:var(--gold);font-size:19px;margin:24px 0 13px}
 .card{
 background:linear-gradient(145deg,#142d20,#09130e);
 border:1px solid var(--gold);border-radius:13px;
-padding:17px;margin-bottom:20px;
+padding:16px;margin-bottom:18px;
 box-shadow:0 8px 25px #0008;
 }
-.card h2{color:var(--gold);font-size:20px;margin:8px 0}
+.card h2{color:var(--gold);font-size:19px;margin:8px 0}
 .tag{
 display:inline-block;padding:6px 10px;border-radius:20px;
 background:#283b2b;color:var(--gold);
 font-weight:bold;margin:7px 0 10px;font-size:10px;
 }
 .description{color:#d3ded6;line-height:1.6}
-.price{font-size:25px;color:var(--gold);font-weight:900;margin:12px 0}
+.price{font-size:23px;color:var(--gold);font-weight:900;margin:12px 0}
+.naira{color:var(--green);font-size:16px;font-weight:bold;margin-top:-5px}
 .stats{
 display:flex;justify-content:space-between;gap:10px;
-padding:10px 0;border-top:1px solid #ffffff25;margin-top:7px;
+padding:9px 0;border-top:1px solid #ffffff25;margin-top:7px;
 }
 .match{
 padding:11px 8px;margin:8px 0;background:#0a1c12;
 border:1px solid #286340;border-radius:9px;
 text-align:center;font-weight:bold;font-size:12px;
 }
-.match-title{color:var(--gold);text-align:center;font-size:13px;margin:17px 0 10px}
+.match-title{color:var(--gold);text-align:center;font-size:13px;margin:16px 0 10px}
 .pick{color:var(--green);font-size:11px;margin-top:5px}
 .btn{
 display:block;text-align:center;text-decoration:none;
@@ -83,13 +81,23 @@ color:#07120b;font-weight:900;font-size:13px;
 }
 .free-code{
 padding:12px;text-align:center;border:1px dashed var(--green);
-border-radius:9px;color:var(--green);font-size:17px;
+border-radius:9px;color:var(--green);font-size:16px;
 font-weight:900;margin:13px 0;
 }
 .notice{
 margin:18px 0;padding:14px;border-radius:10px;
 background:#29200e;border:1px solid var(--gold);
 color:#f7e2a8;text-align:center;line-height:1.6;
+}
+.currency-box{
+text-align:center;margin:15px auto;padding:12px;
+background:#10251b;border:1px solid #286340;
+border-radius:10px;max-width:300px;
+}
+.currency-box label{display:block;color:var(--gold);font-weight:bold;margin-bottom:8px}
+.currency-box select{
+background:#07120b;color:white;border:1px solid var(--green);
+padding:9px 14px;border-radius:7px;font-weight:bold;
 }
 footer{
 margin-top:30px;padding:22px 12px;text-align:center;
@@ -99,7 +107,7 @@ color:#aaa;line-height:1.8;
 footer strong{color:var(--green)}
 @media(max-width:500px){
 .logo{font-size:19px}
-.card{padding:14px}
+.card{padding:13px}
 nav{gap:10px}
 }
 </style>
@@ -131,6 +139,19 @@ nav{gap:10px}
 
 <main class="container">
 
+<!-- COUNTRY AND CURRENCY SELECTOR -->
+
+<div class="currency-box">
+<label for="country">SELECT YOUR COUNTRY</label>
+<select id="country" onchange="changeCurrency()">
+<option value="GH">🇬🇭 Ghana</option>
+<option value="NG">🇳🇬 Nigeria</option>
+</select>
+<p style="font-size:10px;color:#aaa;margin-bottom:0">
+Prices change according to your selected country.
+</p>
+</div>
+
 <!-- CHRISTMAS ODDS -->
 
 <h2 class="section-title">CHRISTMAS ODDS</h2>
@@ -141,30 +162,28 @@ nav{gap:10px}
 
 <p class="description">
 Get access to our exclusive Christmas football ticket.
-Teams are displayed below. Full selections and booking
-code are delivered after successful payment verification.
+Full selections and booking code are delivered after successful payment verification.
 </p>
 
-<div class="price">GH₵25</div>
+<div class="price" data-gh="GH₵10" data-ng="₦1,200">GH₵10</div>
 
 <div class="stats"><span>Package</span><strong>Christmas Odds</strong></div>
-<div class="stats"><span>Total Odds</span><strong>25.98</strong></div>
 <div class="stats"><span>Total Matches</span><strong>12 Games</strong></div>
 
 <h3 class="match-title">FEATURED MATCHES</h3>
 
-<div class="match">Man City vs Fulham</div>
-<div class="match">Lazio vs Lecce</div>
-<div class="match">Bournemouth vs Nottingham Forest</div>
-<div class="match">Aston Villa vs Sunderland</div>
-<div class="match">Coventry City vs Crystal Palace</div>
-<div class="match">Rayo Vallecano vs Valencia</div>
-<div class="match">Nice vs PSG</div>
-<div class="match">Parma vs Roma</div>
-<div class="match">Sevilla vs Betis</div>
-<div class="match">Newcastle vs Arsenal</div>
-<div class="match">Schalke vs Stuttgart</div>
-<div class="match">Lille vs Lyon</div>
+<div class="match">Hull City vs Brighton</div>
+<div class="match">Barcelona vs Villarreal</div>
+<div class="match">Getafe vs Atletico Madrid</div>
+<div class="match">Osasuna vs Malaga CF</div>
+<div class="match">Racing Santander vs Real Sociedad</div>
+<div class="match">Sassuolo vs Genoa</div>
+<div class="match">Bologna vs Udinese</div>
+<div class="match">Marseille vs Le Mans FC</div>
+<div class="match">KV Kortrijk vs Union Gilloise</div>
+<div class="match">Nordsjaelland vs Copenhagen</div>
+<div class="match">PAOK vs AE Kifisia FC</div>
+<div class="match">HNK Rijeka vs HNK Gorica</div>
 
 <a class="btn" href="https://paystack.shop/pay/p5tgcalrh1" target="_blank" rel="noopener">GET CHRISTMAS ODDS</a>
 </section>
@@ -182,28 +201,18 @@ Get access to our exclusive VIP 2 football ticket.
 Selections and booking code remain private until payment verification.
 </p>
 
-<div class="price">GH₵40</div>
+<div class="price" data-gh="GH₵25" data-ng="₦3,000">GH₵25</div>
 
 <div class="stats"><span>Package</span><strong>VIP 2</strong></div>
-<div class="stats"><span>Total Odds</span><strong>46.93</strong></div>
-<div class="stats"><span>Total Matches</span><strong>14 Games</strong></div>
+<div class="stats"><span>Total Matches</span><strong>5 Games</strong></div>
 
 <h3 class="match-title">FEATURED MATCHES</h3>
 
-<div class="match">Galatasaray vs Samsunspor</div>
-<div class="match">Como vs Cagliari</div>
-<div class="match">Borussia M'gladbach vs Dortmund</div>
-<div class="match">Union Berlin vs RB Leipzig</div>
-<div class="match">Bayer Leverkusen vs Paderborn</div>
-<div class="match">Eintracht Frankfurt vs Hoffenheim</div>
-<div class="match">Elversberg vs Freiburg</div>
-<div class="match">Chelsea vs Leeds United</div>
-<div class="match">Kocaelispor vs Fenerbahce</div>
-<div class="match">Bohemians Prague vs Viktoria Plzen</div>
-<div class="match">Napoli vs Torino</div>
-<div class="match">KV Mechelen vs Club Brugge</div>
-<div class="match">Strasbourg vs Brest</div>
-<div class="match">Nordsjaelland vs Copenhagen</div>
+<div class="match">KV Kortrijk vs Union Gilloise</div>
+<div class="match">Sparta Rotterdam vs Alkmaar</div>
+<div class="match">Go Ahead Eagles vs Fortuna Sittard</div>
+<div class="match">FK Austria Wien vs Salzburg</div>
+<div class="match">Liverpool vs Man Utd</div>
 
 <a class="btn" href="https://paystack.shop/pay/-5y0qyoakx" target="_blank" rel="noopener">GET VIP 2</a>
 </section>
@@ -218,19 +227,18 @@ Selections and booking code remain private until payment verification.
 
 <p class="description">
 Access our special VIP 3 correct score ticket.
-Full predictions and booking code are kept private until payment verification.
+Full predictions and booking code remain private until payment verification.
 </p>
 
-<div class="price">GH₵150</div>
+<div class="price" data-gh="GH₵100" data-ng="₦12,000">GH₵100</div>
 
 <div class="stats"><span>Package</span><strong>VIP 3</strong></div>
-<div class="stats"><span>Total Odds</span><strong>297.00</strong></div>
 <div class="stats"><span>Total Matches</span><strong>2 Games</strong></div>
 
 <h3 class="match-title">FEATURED MATCHES</h3>
 
-<div class="match">Real Madrid vs Celta</div>
-<div class="match">Rayo Vallecano vs Valencia</div>
+<div class="match">Liverpool vs Man Utd</div>
+<div class="match">Hull City vs Brighton</div>
 
 <a class="btn" href="https://paystack.shop/pay/sdofh9gf46" target="_blank" rel="noopener">GET VIP 3</a>
 </section>
@@ -250,33 +258,32 @@ Enjoy our free football predictions. No payment required.
 <div class="price" style="color:var(--green)">FREE</div>
 
 <div class="stats"><span>Package</span><strong>Free Games</strong></div>
-<div class="stats"><span>Total Odds</span><strong>10.43</strong></div>
 <div class="stats"><span>Total Matches</span><strong>4 Games</strong></div>
 
 <h3 class="match-title">FREE SELECTIONS</h3>
 
 <div class="match">
-Rayo Vallecano vs Valencia
-<div class="pick">Under 2.5 @ 1.87</div>
+Hull City vs Brighton
+<div class="pick">Over 2.5 @ 1.70</div>
 </div>
 
 <div class="match">
-Sevilla vs Betis
-<div class="pick">Away @ 2.47</div>
+Barcelona vs Villarreal
+<div class="pick">Home (0:2) @ 2.15</div>
 </div>
 
 <div class="match">
-Man City vs Fulham
-<div class="pick">Home @ 1.42</div>
+Getafe vs Atletico Madrid
+<div class="pick">Away @ 1.58</div>
 </div>
 
 <div class="match">
-Newcastle vs Arsenal
-<div class="pick">Away @ 1.59</div>
+Racing Santander vs Real Sociedad
+<div class="pick">Away @ 2.09</div>
 </div>
 
 <div class="free-code">
-FREE BOOKING CODE: BSB4B4
+FREE BOOKING CODE: CSB2CX
 </div>
 
 <p style="text-align:center;color:#aaa;font-size:11px">
@@ -303,6 +310,15 @@ Access is provided through the subscriber dashboard after successful payment ver
 <p>© 2026 RealKingBhim Tips. All Rights Reserved.</p>
 <p>Bet responsibly. Football predictions are not guaranteed results.</p>
 </footer>
+
+<script>
+function changeCurrency(){
+const country=document.getElementById("country").value;
+document.querySelectorAll(".price[data-gh]").forEach(function(price){
+price.textContent=country==="NG"?price.dataset.ng:price.dataset.gh;
+});
+}
+</script>
 
 </body>
 </html>
