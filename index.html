@@ -18,10 +18,13 @@ html{scroll-behavior:smooth}
 body{
 margin:0;
 background:radial-gradient(circle at top,#173b29,#050d0a 70%);
-color:#fff;font-family:Arial,sans-serif;font-size:13px;
+color:#fff;
+font-family:Arial,sans-serif;
+font-size:13px;
 }
 header{
-padding:18px 12px;text-align:center;
+padding:18px 12px;
+text-align:center;
 background:linear-gradient(135deg,#06140d,#173c25,#07100b);
 border-bottom:2px solid var(--gold);
 }
@@ -29,86 +32,278 @@ border-bottom:2px solid var(--gold);
 .logo span{color:var(--green)}
 header p{color:#ddd;margin:6px 0}
 nav{
-display:flex;justify-content:center;gap:13px;
-padding:12px 5px;background:#09170f;
-position:sticky;top:0;z-index:10;
-border-bottom:1px solid #245b3a;flex-wrap:wrap;
+display:flex;
+justify-content:center;
+gap:13px;
+padding:12px 5px;
+background:#09170f;
+position:sticky;
+top:0;
+z-index:10;
+border-bottom:1px solid #245b3a;
+flex-wrap:wrap;
 }
-nav a{color:white;text-decoration:none;font-size:11px;font-weight:bold}
+nav a{
+color:white;
+text-decoration:none;
+font-size:11px;
+font-weight:bold;
+}
+nav a:hover{color:var(--green)}
 .hero{
-margin:15px auto;padding:22px 12px;max-width:950px;
-text-align:center;border:1px solid var(--gold);
+margin:15px auto;
+padding:22px 12px;
+max-width:950px;
+text-align:center;
+border:1px solid var(--gold);
 border-radius:14px;
 background:linear-gradient(130deg,#102b1a,#080d0a 55%,#321d0a);
 }
-.hero .small{color:var(--green);font-weight:bold;letter-spacing:2px}
-.hero h1{font-size:clamp(30px,7vw,45px);margin:10px 0;color:var(--gold)}
+.hero .small{
+color:var(--green);
+font-weight:bold;
+letter-spacing:2px;
+}
+.hero h1{
+font-size:clamp(30px,7vw,45px);
+margin:10px 0;
+color:var(--gold);
+}
 .hero h2{font-size:16px;margin:7px}
 .hero p{color:#ddd;line-height:1.5}
-.container{max-width:750px;margin:auto;padding:12px}
-.section-title{text-align:center;color:var(--gold);font-size:19px;margin:24px 0 13px}
+.container{max-width:850px;margin:auto;padding:12px}
+.section-title{
+text-align:center;
+color:var(--gold);
+font-size:19px;
+margin:27px 0 13px;
+}
 .card{
 background:linear-gradient(145deg,#142d20,#09130e);
-border:1px solid var(--gold);border-radius:13px;
-padding:16px;margin-bottom:18px;
+border:1px solid var(--gold);
+border-radius:13px;
+padding:16px;
+margin-bottom:18px;
 box-shadow:0 8px 25px #0008;
 }
 .card h2{color:var(--gold);font-size:19px;margin:8px 0}
 .tag{
-display:inline-block;padding:6px 10px;border-radius:20px;
-background:#283b2b;color:var(--gold);
-font-weight:bold;margin:7px 0 10px;font-size:10px;
+display:inline-block;
+padding:6px 10px;
+border-radius:20px;
+background:#283b2b;
+color:var(--gold);
+font-weight:bold;
+margin:7px 0 10px;
+font-size:10px;
 }
 .description{color:#d3ded6;line-height:1.6}
-.price{font-size:23px;color:var(--gold);font-weight:900;margin:12px 0}
-.naira{color:var(--green);font-size:16px;font-weight:bold;margin-top:-5px}
+.price{
+font-size:23px;
+color:var(--gold);
+font-weight:900;
+margin:12px 0;
+}
+.naira{color:var(--green);font-size:13px;font-weight:bold}
 .stats{
-display:flex;justify-content:space-between;gap:10px;
-padding:9px 0;border-top:1px solid #ffffff25;margin-top:7px;
+display:flex;
+justify-content:space-between;
+gap:10px;
+padding:9px 0;
+border-top:1px solid #ffffff25;
+margin-top:7px;
 }
 .match{
-padding:11px 8px;margin:8px 0;background:#0a1c12;
-border:1px solid #286340;border-radius:9px;
-text-align:center;font-weight:bold;font-size:12px;
+padding:11px 8px;
+margin:8px 0;
+background:#0a1c12;
+border:1px solid #286340;
+border-radius:9px;
+text-align:center;
+font-weight:bold;
+font-size:12px;
 }
-.match-title{color:var(--gold);text-align:center;font-size:13px;margin:16px 0 10px}
+.match-title{
+color:var(--gold);
+text-align:center;
+font-size:13px;
+margin:16px 0 10px;
+}
 .pick{color:var(--green);font-size:11px;margin-top:5px}
 .btn{
-display:block;text-align:center;text-decoration:none;
-padding:13px;margin-top:15px;border-radius:8px;
+display:block;
+text-align:center;
+text-decoration:none;
+padding:13px;
+margin-top:15px;
+border-radius:8px;
 background:linear-gradient(90deg,#b78324,#ffdf83);
-color:#07120b;font-weight:900;font-size:13px;
+color:#07120b;
+font-weight:900;
+font-size:13px;
+}
+.btn:hover{filter:brightness(1.1)}
+.btn.disabled{
+background:#555;
+color:#ddd;
+cursor:not-allowed;
 }
 .free-code{
-padding:12px;text-align:center;border:1px dashed var(--green);
-border-radius:9px;color:var(--green);font-size:16px;
-font-weight:900;margin:13px 0;
+padding:12px;
+text-align:center;
+border:1px dashed var(--green);
+border-radius:9px;
+color:var(--green);
+font-size:16px;
+font-weight:900;
+margin:13px 0;
 }
 .notice{
-margin:18px 0;padding:14px;border-radius:10px;
-background:#29200e;border:1px solid var(--gold);
-color:#f7e2a8;text-align:center;line-height:1.6;
+margin:18px 0;
+padding:14px;
+border-radius:10px;
+background:#29200e;
+border:1px solid var(--gold);
+color:#f7e2a8;
+text-align:center;
+line-height:1.6;
 }
 .currency-box{
-text-align:center;margin:15px auto;padding:12px;
-background:#10251b;border:1px solid #286340;
-border-radius:10px;max-width:300px;
+text-align:center;
+margin:15px auto;
+padding:12px;
+background:#10251b;
+border:1px solid #286340;
+border-radius:10px;
+max-width:300px;
 }
-.currency-box label{display:block;color:var(--gold);font-weight:bold;margin-bottom:8px}
+.currency-box label{
+display:block;
+color:var(--gold);
+font-weight:bold;
+margin-bottom:8px;
+}
 .currency-box select{
-background:#07120b;color:white;border:1px solid var(--green);
-padding:9px 14px;border-radius:7px;font-weight:bold;
+background:#07120b;
+color:white;
+border:1px solid var(--green);
+padding:9px 14px;
+border-radius:7px;
+font-weight:bold;
 }
+
+/* WINNING TICKETS GALLERY */
+
+.wins-intro{
+text-align:center;
+color:#ddd;
+line-height:1.6;
+}
+.wins-wrap{
+overflow:hidden;
+width:100%;
+padding:12px 0 20px;
+background:#07120b;
+border:1px solid #286340;
+border-radius:12px;
+}
+.wins-track{
+display:flex;
+width:max-content;
+gap:15px;
+animation:winningScroll 65s linear infinite;
+}
+.wins-wrap:hover .wins-track{
+animation-play-state:paused;
+}
+.wins-track a{
+display:block;
+width:300px;
+height:650px;
+flex-shrink:0;
+background:#000;
+border:2px solid var(--gold);
+border-radius:10px;
+overflow:hidden;
+}
+.wins-track img{
+width:100%;
+height:100%;
+object-fit:contain;
+display:block;
+}
+.win-label{
+text-align:center;
+color:var(--green);
+font-weight:900;
+margin-bottom:10px;
+font-size:13px;
+}
+@keyframes winningScroll{
+from{transform:translateX(0)}
+to{transform:translateX(-50%)}
+}
+.gallery-note{
+text-align:center;
+color:#aaa;
+font-size:11px;
+line-height:1.5;
+margin-top:10px;
+}
+
+/* IMAGE ENLARGEMENT */
+
+.lightbox{
+display:none;
+position:fixed;
+inset:0;
+z-index:1000;
+background:#000f;
+align-items:center;
+justify-content:center;
+padding:12px;
+}
+.lightbox.show{display:flex}
+.lightbox img{
+max-width:100%;
+max-height:90vh;
+object-fit:contain;
+}
+.lightbox-close{
+position:absolute;
+top:15px;
+right:18px;
+background:#173b29;
+border:1px solid var(--gold);
+color:white;
+font-size:25px;
+padding:5px 13px;
+border-radius:8px;
+}
+
 footer{
-margin-top:30px;padding:22px 12px;text-align:center;
-background:#07120b;border-top:1px solid var(--gold);
-color:#aaa;line-height:1.8;
+margin-top:30px;
+padding:22px 12px;
+text-align:center;
+background:#07120b;
+border-top:1px solid var(--gold);
+color:#aaa;
+line-height:1.8;
 }
 footer strong{color:var(--green)}
+
 @media(max-width:500px){
 .logo{font-size:19px}
 .card{padding:13px}
 nav{gap:10px}
+.wins-track a{
+width:270px;
+height:585px;
+}
+}
+@media(prefers-reduced-motion:reduce){
+.wins-track{animation:none}
+html{scroll-behavior:auto}
 }
 </style>
 </head>
@@ -123,9 +318,11 @@ nav{gap:10px}
 
 <nav>
 <a href="#home">HOME</a>
+<a href="#winning">WINNING TICKETS</a>
 <a href="#christmas">CHRISTMAS</a>
 <a href="#vip2">VIP 2</a>
 <a href="#vip3">VIP 3</a>
+<a href="#group">VIP GROUP</a>
 <a href="#free">FREE GAMES</a>
 <a href="#contact">CONTACT</a>
 </nav>
@@ -139,18 +336,84 @@ nav{gap:10px}
 
 <main class="container">
 
-<!-- COUNTRY AND CURRENCY SELECTOR -->
+<!-- CURRENCY SELECTOR -->
 
 <div class="currency-box">
 <label for="country">SELECT YOUR COUNTRY</label>
 <select id="country" onchange="changeCurrency()">
-<option value="GH">🇬🇭 Ghana</option>
-<option value="NG">🇳🇬 Nigeria</option>
+<option value="GH">Ghana - GHS</option>
+<option value="NG">Nigeria - NGN</option>
 </select>
 <p style="font-size:10px;color:#aaa;margin-bottom:0">
-Prices change according to your selected country.
+Contact admin for Nigerian package pricing.
 </p>
 </div>
+
+<!-- PREVIOUS WINNING TICKETS -->
+
+<h2 class="section-title" id="winning">
+🏆 PREVIOUS WINNING TICKETS 🏆
+</h2>
+
+<p class="wins-intro">
+RealKingBhim Tips previous winning ticket screenshots.
+Tap any ticket to enlarge and inspect it.
+</p>
+
+<div class="win-label">VERIFIED WINNING TICKET SCREENSHOTS</div>
+
+<div class="wins-wrap">
+<div class="wins-track">
+
+<!-- FIRST SET -->
+<a href="IMG_0547.jpeg" class="ticket-image">
+<img src="IMG_0547.jpeg" alt="Previous winning ticket 1" loading="eager">
+</a>
+
+<a href="IMG_0548.jpeg" class="ticket-image">
+<img src="IMG_0548.jpeg" alt="Previous winning ticket 2" loading="eager">
+</a>
+
+<a href="IMG_0549.jpeg" class="ticket-image">
+<img src="IMG_0549.jpeg" alt="Previous winning ticket 3" loading="eager">
+</a>
+
+<a href="IMG_0550.jpeg" class="ticket-image">
+<img src="IMG_0550.jpeg" alt="Previous winning ticket 4" loading="eager">
+</a>
+
+<a href="IMG_0551.jpeg" class="ticket-image">
+<img src="IMG_0551.jpeg" alt="Previous winning ticket 5" loading="eager">
+</a>
+
+<!-- DUPLICATE SET FOR CONTINUOUS MOVEMENT -->
+<a href="IMG_0547.jpeg" class="ticket-image" aria-hidden="true">
+<img src="IMG_0547.jpeg" alt="" loading="lazy">
+</a>
+
+<a href="IMG_0548.jpeg" class="ticket-image" aria-hidden="true">
+<img src="IMG_0548.jpeg" alt="" loading="lazy">
+</a>
+
+<a href="IMG_0549.jpeg" class="ticket-image" aria-hidden="true">
+<img src="IMG_0549.jpeg" alt="" loading="lazy">
+</a>
+
+<a href="IMG_0550.jpeg" class="ticket-image" aria-hidden="true">
+<img src="IMG_0550.jpeg" alt="" loading="lazy">
+</a>
+
+<a href="IMG_0551.jpeg" class="ticket-image" aria-hidden="true">
+<img src="IMG_0551.jpeg" alt="" loading="lazy">
+</a>
+
+</div>
+</div>
+
+<p class="gallery-note">
+The gallery moves automatically. Move your pointer over it to pause.
+Tap a ticket to see the full-size screenshot.
+</p>
 
 <!-- CHRISTMAS ODDS -->
 
@@ -165,27 +428,35 @@ Get access to our exclusive Christmas football ticket.
 Full selections and booking code are delivered after successful payment verification.
 </p>
 
-<div class="price" data-gh="GH₵10" data-ng="₦1,200">GH₵10</div>
+<div class="price" data-gh="GH₵15" data-ng="Contact admin">GH₵15</div>
 
-<div class="stats"><span>Package</span><strong>Christmas Odds</strong></div>
-<div class="stats"><span>Total Matches</span><strong>12 Games</strong></div>
+<div class="stats">
+<span>Package</span>
+<strong>Christmas Odds</strong>
+</div>
+<div class="stats">
+<span>Total Odds</span>
+<strong>37.90</strong>
+</div>
 
 <h3 class="match-title">FEATURED MATCHES</h3>
 
-<div class="match">Hull City vs Brighton</div>
-<div class="match">Barcelona vs Villarreal</div>
-<div class="match">Getafe vs Atletico Madrid</div>
-<div class="match">Osasuna vs Malaga CF</div>
-<div class="match">Racing Santander vs Real Sociedad</div>
-<div class="match">Sassuolo vs Genoa</div>
-<div class="match">Bologna vs Udinese</div>
-<div class="match">Marseille vs Le Mans FC</div>
-<div class="match">KV Kortrijk vs Union Gilloise</div>
-<div class="match">Nordsjaelland vs Copenhagen</div>
-<div class="match">PAOK vs AE Kifisia FC</div>
-<div class="match">HNK Rijeka vs HNK Gorica</div>
+<div class="match">Shabab Al Ahli Dubai vs Al Qadsiah</div>
+<div class="match">Galatasaray vs Aston Villa</div>
+<div class="match">Bodø/Glimt vs LASK Linz</div>
+<div class="match">Sheffield United vs Southampton</div>
+<div class="match">Middlesbrough vs Swansea</div>
+<div class="match">Arsenal vs Borussia Dortmund</div>
+<div class="match">Como 1907 vs AEK Athens</div>
+<div class="match">Feyenoord vs Porto</div>
+<div class="match">Man City vs Napoli</div>
+<div class="match">RB Leipzig vs Lens</div>
+<div class="match">Slovan Bratislava vs Betis</div>
+<div class="match">Real Madrid vs PSV Eindhoven</div>
+<div class="match">Rangers vs Aberdeen</div>
 
-<a class="btn" href="https://paystack.shop/pay/p5tgcalrh1" target="_blank" rel="noopener">GET CHRISTMAS ODDS</a>
+<a class="btn" href="https://paystack.shop/pay/p5tgcalrh1"
+target="_blank" rel="noopener">GET CHRISTMAS ODDS</a>
 </section>
 
 <!-- VIP 2 -->
@@ -201,20 +472,28 @@ Get access to our exclusive VIP 2 football ticket.
 Selections and booking code remain private until payment verification.
 </p>
 
-<div class="price" data-gh="GH₵25" data-ng="₦3,000">GH₵25</div>
+<div class="price" data-gh="GH₵30" data-ng="Contact admin">GH₵30</div>
 
-<div class="stats"><span>Package</span><strong>VIP 2</strong></div>
-<div class="stats"><span>Total Matches</span><strong>5 Games</strong></div>
+<div class="stats">
+<span>Package</span>
+<strong>VIP 2</strong>
+</div>
+<div class="stats">
+<span>Total Odds</span>
+<strong>61.87</strong>
+</div>
 
 <h3 class="match-title">FEATURED MATCHES</h3>
 
-<div class="match">KV Kortrijk vs Union Gilloise</div>
-<div class="match">Sparta Rotterdam vs Alkmaar</div>
-<div class="match">Go Ahead Eagles vs Fortuna Sittard</div>
-<div class="match">FK Austria Wien vs Salzburg</div>
-<div class="match">Liverpool vs Man Utd</div>
+<div class="match">Shabab Al Ahli Dubai vs Al Qadsiah</div>
+<div class="match">Middlesbrough FC vs Swansea</div>
+<div class="match">Sheffield United vs Southampton</div>
+<div class="match">Feyenoord vs Porto</div>
+<div class="match">RB Leipzig vs Lens</div>
+<div class="match">Slovan Bratislava vs Betis</div>
 
-<a class="btn" href="https://paystack.shop/pay/-5y0qyoakx" target="_blank" rel="noopener">GET VIP 2</a>
+<a class="btn" href="https://paystack.shop/pay/-5y0qyoakx"
+target="_blank" rel="noopener">GET VIP 2</a>
 </section>
 
 <!-- VIP 3 -->
@@ -230,17 +509,71 @@ Access our special VIP 3 correct score ticket.
 Full predictions and booking code remain private until payment verification.
 </p>
 
-<div class="price" data-gh="GH₵100" data-ng="₦12,000">GH₵100</div>
+<div class="price" data-gh="GH₵120" data-ng="Contact admin">GH₵120</div>
 
-<div class="stats"><span>Package</span><strong>VIP 3</strong></div>
-<div class="stats"><span>Total Matches</span><strong>2 Games</strong></div>
+<div class="stats">
+<span>Package</span>
+<strong>VIP 3</strong>
+</div>
+<div class="stats">
+<span>Total Odds</span>
+<strong>336.00</strong>
+</div>
 
 <h3 class="match-title">FEATURED MATCHES</h3>
 
-<div class="match">Liverpool vs Man Utd</div>
-<div class="match">Hull City vs Brighton</div>
+<div class="match">Slovan Bratislava vs Betis</div>
+<div class="match">Feyenoord vs Porto</div>
 
-<a class="btn" href="https://paystack.shop/pay/sdofh9gf46" target="_blank" rel="noopener">GET VIP 3</a>
+<a class="btn" href="https://paystack.shop/pay/sdofh9gf46"
+target="_blank" rel="noopener">GET VIP 3</a>
+</section>
+
+<!-- VIP GROUP SLOT -->
+
+<h2 class="section-title">VIP GROUP SLOT</h2>
+
+<section class="card" id="group">
+<h2>VIP GROUP SLOT</h2>
+<div class="tag">2 MONTHS PRIVATE MEMBERSHIP</div>
+
+<p class="description">
+Join our private VIP group and receive exclusive football tips,
+updates and member announcements for two months.
+</p>
+
+<div class="price" data-gh="GH₵100" data-ng="Contact admin">
+GH₵100
+</div>
+
+<div class="stats">
+<span>Subscription</span>
+<strong>2 Months</strong>
+</div>
+
+<div class="stats">
+<span>Membership</span>
+<strong>Private VIP Group</strong>
+</div>
+
+<div class="notice">
+<strong>PAYMENT VERIFICATION REQUIRED</strong><br>
+After successful payment, contact the RealKingBhim Tips admin
+and provide your payment confirmation.
+Your membership and invitation link will be provided
+after admin verification.
+</div>
+
+<a class="btn disabled"
+href="#group"
+aria-disabled="true"
+onclick="return false">
+PAYMENT LINK BEING UPDATED
+</a>
+
+<p style="text-align:center;color:#aaa;font-size:11px">
+The VIP Group payment page must be corrected to GH₵100 before checkout is activated.
+</p>
 </section>
 
 <!-- FREE GAMES -->
@@ -257,33 +590,53 @@ Enjoy our free football predictions. No payment required.
 
 <div class="price" style="color:var(--green)">FREE</div>
 
-<div class="stats"><span>Package</span><strong>Free Games</strong></div>
-<div class="stats"><span>Total Matches</span><strong>4 Games</strong></div>
+<div class="stats">
+<span>Package</span>
+<strong>Free Games</strong>
+</div>
+<div class="stats">
+<span>Total Matches</span>
+<strong>6 Games</strong>
+</div>
+<div class="stats">
+<span>Total Odds</span>
+<strong>5.94</strong>
+</div>
 
 <h3 class="match-title">FREE SELECTIONS</h3>
 
 <div class="match">
-Hull City vs Brighton
-<div class="pick">Over 2.5 @ 1.70</div>
+Como 1907 vs AEK Athens
+<div class="pick">Home @ 1.25</div>
 </div>
 
 <div class="match">
-Barcelona vs Villarreal
-<div class="pick">Home (0:2) @ 2.15</div>
+Man City vs Napoli
+<div class="pick">Home @ 1.27</div>
 </div>
 
 <div class="match">
-Getafe vs Atletico Madrid
-<div class="pick">Away @ 1.58</div>
+Slovan Bratislava vs Betis
+<div class="pick">Over 3.5 Bookings @ 1.50</div>
 </div>
 
 <div class="match">
-Racing Santander vs Real Sociedad
-<div class="pick">Away @ 2.09</div>
+Arsenal vs Borussia Dortmund
+<div class="pick">Home @ 1.40</div>
+</div>
+
+<div class="match">
+Bodø/Glimt vs LASK Linz
+<div class="pick">Away (0:3) @ 1.31</div>
+</div>
+
+<div class="match">
+Galatasaray vs Aston Villa
+<div class="pick">Away Team Over 3.5 Corners @ 1.36</div>
 </div>
 
 <div class="free-code">
-FREE BOOKING CODE: CSB2CX
+FREE BOOKING CODE: CR8AJE
 </div>
 
 <p style="text-align:center;color:#aaa;font-size:11px">
@@ -294,13 +647,18 @@ Enjoy our free tips. Bet responsibly.
 <div class="notice">
 <strong>IMPORTANT NOTICE</strong><br>
 Paid package selections and booking codes are not displayed publicly.
-Access is provided through the subscriber dashboard after successful payment verification.
+VIP Group membership requires admin payment verification.
+Football predictions are not guaranteed results.
+Please bet responsibly.
 </div>
 
 <section id="contact" class="card" style="text-align:center">
 <h2>REALKINGBHIM TIPS</h2>
 <p>Stay updated with our latest football tickets.</p>
 <p style="color:#20e879;font-weight:bold">LET'S WIN TOGETHER!</p>
+<p style="color:#aaa;font-size:11px">
+For VIP Group verification, contact the RealKingBhim Tips admin.
+</p>
 </section>
 
 </main>
@@ -308,17 +666,55 @@ Access is provided through the subscriber dashboard after successful payment ver
 <footer>
 <p><strong>REALKINGBHIM TIPS</strong></p>
 <p>© 2026 RealKingBhim Tips. All Rights Reserved.</p>
-<p>Bet responsibly. Football predictions are not guaranteed results.</p>
+<p>Past wins do not guarantee future results. Bet responsibly.</p>
 </footer>
+
+<!-- IMAGE LIGHTBOX -->
+
+<div class="lightbox" id="lightbox">
+<button class="lightbox-close" onclick="closeLightbox()">×</button>
+<img id="largeTicket" src="" alt="Enlarged winning ticket">
+</div>
 
 <script>
 function changeCurrency(){
 const country=document.getElementById("country").value;
 document.querySelectorAll(".price[data-gh]").forEach(function(price){
-price.textContent=country==="NG"?price.dataset.ng:price.dataset.gh;
+price.textContent=country==="NG"
+?price.dataset.ng
+:price.dataset.gh;
 });
 }
+
+/* ENLARGE WINNING TICKETS */
+
+document.querySelectorAll(".ticket-image").forEach(function(link){
+link.addEventListener("click",function(event){
+event.preventDefault();
+const image=this.querySelector("img");
+document.getElementById("largeTicket").src=image.src;
+document.getElementById("lightbox").classList.add("show");
+});
+});
+
+function closeLightbox(){
+document.getElementById("lightbox").classList.remove("show");
+document.getElementById("largeTicket").src="";
+}
+
+document.getElementById("lightbox").addEventListener("click",function(event){
+if(event.target===this){
+closeLightbox();
+}
+});
+
+document.addEventListener("keydown",function(event){
+if(event.key==="Escape"){
+closeLightbox();
+}
+});
 </script>
 
 </body>
 </html>
+
